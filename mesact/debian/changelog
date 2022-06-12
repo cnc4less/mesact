@@ -1,3 +1,9 @@
+mesact (0.6.3) unstable; urgency=medium
+
+  * Add Mesaflash PCI operations
+
+ -- John Thornton <jt@gnipsel.com>  Sun, 12 Jun 2022 12:52:25 -0500
+
 mesact (0.6.2) unstable; urgency=medium
 
   * Add step and direction spindle
