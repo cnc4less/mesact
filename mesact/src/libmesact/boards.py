@@ -41,6 +41,45 @@ def boardChanged(parent):
 			parent.machinePTE.appendPlainText(f'No Firmware found {parent.boardCB.currentText()}!')
 			parent.machinePTE.appendPlainText(f'No Daughter Cards are available for {parent.boardCB.currentText()}')
 
+		if parent.boardCB.currentData() == '5i24': # DOUBLE CHECK THE SETTINGS
+			parent.boardType = 'pci'
+			parent.cardType_0 = ''
+			parent.mainTabs.setTabEnabled(3, False)
+			parent.mainTabs.setTabEnabled(4, False)
+			for i in range(32):
+				getattr(parent, f'inputDebounceCB_{i}').setEnabled(False)
+			parent.boardTW.setTabText(0, '5i24')
+			parent.ipAddressCB.setEnabled(False)
+			parent.daughterCB_0.setEnabled(True)
+			parent.daughterCB_1.setEnabled(True)
+			parent.ipAddressCB.setCurrentIndex(0)
+			pixmap = QPixmap(os.path.join(parent.image_path, '5i24-card.png'))
+			parent.boardLB.setPixmap(pixmap)
+			parent.schematicLB_0.clear()
+			info = ('')
+			parent.boardInfoLB.setText(info)
+			parent.daughterLB_0.setText('P2')
+			parent.daughterLB_1.setText('P3')
+			parent.stepgensCB.clear()
+			parent.stepgensCB.addItem('N/A', False)
+			parent.pwmgensCB.clear()
+			parent.pwmgensCB.addItem('N/A', False)
+			parent.encodersCB.clear()
+			parent.encodersCB.addItem('N/A', False)
+			# Smart Serial
+			parent.ssWiring_0.setText('')
+			parent.ssWiring_1.setText('')
+			parent.ssWiring_2.setText('')
+			parent.ssWiring_3.setText('')
+			parent.ssWiring_4.setText('')
+			parent.ssWiring_5.setText('')
+			parent.ssWiring_6.setText('')
+			parent.ssNotesGB.setTitle('')
+			parent.ssWiringGB.setEnabled(False)
+			parent.ssNotesGB.setEnabled(False)
+			parent.ssWiringPTE.clear()
+
+
 		if parent.boardCB.currentData() == '5i25':
 			parent.boardType = 'pci'
 			parent.cardType_0 = ''
