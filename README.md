@@ -2,7 +2,7 @@
 Mesa Configuration Tool
 
 The Mesa Configuration Tool is designed to create LinuxCNC configuration for the
-following boards 5i25, 6i25, 7i76e, 7i80db, 7i80hd, 7i92, 7i93, 7i95, 7i96,
+following boards 5i25, 6i25, 7i76E, 7i80DB, 7i80HD, 7i92, 7i93, 7i95, 7i96,
 7i96S, 7i97 and 7i98.
 
 Adding support for 5i24 and 6i24 boards.
