@@ -544,7 +544,7 @@ def boardChanged(parent):
 			parent.machinePTE.clear()
 			parent.machinePTE.appendPlainText('The 7i96S requires LinuxCNC Uspace 2.9 Febuary 24, 2022 or newer!')
 			parent.machinePTE.appendPlainText(f'Firmware is optional for {parent.board} all in one boards')
-			parent.machinePTE.appendPlainText(f'Default firmware for {parent.board} is 7i96sd.bin')
+			parent.machinePTE.appendPlainText(f'Default firmware for {parent.board} is 7i96s_d.bin')
 			utilities.checkmesaflash(parent, '3.4.3')
 
 			parent.spindleTypeCB.clear()
