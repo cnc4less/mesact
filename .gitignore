@@ -1,0 +1,14 @@
+board-notes
+configs
+drawings
+manuals
+docs/build
+mesact/debian/.debhelper
+mesact/debian/debhelper*
+mesact/debian/mesact
+mesact/debian/files
+*.dsc
+*.xz
+*.buildinfo
+*.changes
+*.substvars
