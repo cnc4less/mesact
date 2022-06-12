@@ -1,11 +1,12 @@
 import os, sys, subprocess
 from subprocess import Popen, PIPE
-from PyQt5.QtWidgets import QInputDialog, QLineEdit, QInputDialog
+from PyQt5.QtWidgets import QInputDialog, QLineEdit, QDialogButtonBox
 
 def getPassword(parent):
-		password, okPressed = QInputDialog.getText(parent, "Password Required","Password:", QLineEdit.Normal, "")
-		if okPressed and password != '':
-			return password
+	dialog = 'You need root privileges\nto access PCI hardware.\nEnter your Password:'
+	password, okPressed = QInputDialog.getText(parent, 'Password Required', dialog, QLineEdit.Normal, "")
+	if okPressed and password != '':
+		return password
 
 def check_ip(parent):
 	if not parent.ipAddressCB.currentData():
@@ -29,6 +30,7 @@ def getResults(parent, prompt, result):
 	parent.machinePTE.appendPlainText(output)
 
 def checkCard(parent):
+	prompt = None
 	board = parent.device
 	if check_emc():
 		parent.errorMsgOk(f'LinuxCNC must NOT be running\n to read the {parent.board}', 'Error')
@@ -43,13 +45,15 @@ def checkCard(parent):
 
 	elif parent.boardType == 'pci':
 		password = getPassword(parent)
-		p = Popen(['sudo', '-S', 'mesaflash', '--device', board],
-			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-		prompt = p.communicate(password + '\n')
-
-	getResults(parent, prompt, p.returncode)
+		if password != None:
+			p = Popen(['sudo', '-S', 'mesaflash', '--device', board],
+				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+			prompt = p.communicate(password + '\n')
+	if prompt:
+		getResults(parent, prompt, p.returncode)
 
 def readpd(parent):
+	prompt = None
 	if check_emc():
 		parent.errorMsgOk(f'LinuxCNC must NOT be running\n to read the {parent.board}', 'Error')
 		return
@@ -64,13 +68,15 @@ def readpd(parent):
 
 	elif parent.boardType == 'pci':
 		password = getPassword(parent)
-		p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--print-pd'],
-			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-		prompt = p.communicate(password + '\n')
-
-	getResults(parent, prompt, p.returncode)
+		if password != None:
+			p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--print-pd'],
+				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+			prompt = p.communicate(password + '\n')
+	if prompt:
+		getResults(parent, prompt, p.returncode)
 
 def readhmid(parent):
+	prompt = None
 	if check_emc():
 		parent.errorMsgOk(f'LinuxCNC must NOT be running\n to read the {parent.board}', 'Error')
 		return
@@ -85,13 +91,16 @@ def readhmid(parent):
 
 	elif parent.boardType == 'pci':
 		password = getPassword(parent)
-		p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--readhmid'],
-			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-		prompt = p.communicate(password + '\n')
+		if password != None:
+			p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--readhmid'],
+				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+			prompt = p.communicate(password + '\n')
 
-	getResults(parent, prompt, p.returncode)
+	if prompt:
+		getResults(parent, prompt, p.returncode)
 
 def flashCard(parent):
+	prompt = None
 	arguments = []
 	if check_emc():
 		parent.errorMsgOk(f'LinuxCNC must NOT be running\n to flash the {parent.board}', 'Error')
@@ -109,17 +118,20 @@ def flashCard(parent):
 
 		elif parent.boardType == 'pci':
 			password = getPassword(parent)
-			p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--write', firmware],
-				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-			prompt = p.communicate(password + '\n')
+			if password != None:
+				p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--write', firmware],
+					stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+				prompt = p.communicate(password + '\n')
 
-		getResults(parent, prompt, p.returncode)
+		if prompt:
+			getResults(parent, prompt, p.returncode)
 
 	else:
 		parent.errorMsgOk('A firmware must be selected', 'Error!')
 		return
 
 def reloadCard(parent):
+	prompt = None
 	if check_emc():
 		parent.errorMsgOk(f'LinuxCNC must NOT be running\n to reload the {board}', 'Error')
 		return
@@ -134,35 +146,45 @@ def reloadCard(parent):
 
 	elif parent.boardType == 'pci':
 		password = getPassword(parent)
-		p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--reload'],
-			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-		prompt = p.communicate(password + '\n')
+		if password != None:
+			p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--reload'],
+				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+			prompt = p.communicate(password + '\n')
 
-	getResults(parent, prompt, p.returncode)
+	if prompt:
+		getResults(parent, prompt, p.returncode)
 
 def verifyCard(parent):
+	prompt = None
 	if check_emc():
 		parent.errorMsgOk(f'LinuxCNC must NOT be running\n to verify the {board}', 'Error')
 		return
-	if parent.boardType == 'eth':
-		if check_ip(parent):
-			ipAddress = parent.ipAddressCB.currentText()
-			firmware = os.path.join(parent.lib_path, parent.firmwareCB.currentData())
-			p = Popen(['mesaflash', '--device', parent.device, '--addr', ipAddress, '--verify', firmware],
-				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-			prompt = p.communicate()
-		else:
-			return
+	if parent.firmwareCB.currentData():
+		firmware = os.path.join(parent.lib_path, parent.firmwareCB.currentData())
+		if parent.boardType == 'eth':
+			if check_ip(parent):
+				ipAddress = parent.ipAddressCB.currentText()
+				p = Popen(['mesaflash', '--device', parent.device, '--addr', ipAddress, '--verify', firmware],
+					stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+				prompt = p.communicate()
+			else:
+				return
 
-	elif parent.boardType == 'pci':
-		password = getPassword(parent)
-		p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--reload'],
-			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-		prompt = p.communicate(password + '\n')
+		elif parent.boardType == 'pci':
+			password = getPassword(parent)
+			if password != None:
+				p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--verify', firmware],
+					stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+				prompt = p.communicate(password + '\n')
 
-	getResults(parent, prompt, p.returncode)
+		if prompt:
+			getResults(parent, prompt, p.returncode)
+	else:
+		parent.errorMsgOk('A firmware must be selected', 'Error!')
+		return
 
 def getCardPins(parent):
+	prompt = None
 	if parent.boardType == 'eth':
 		if check_ip(parent):
 			with open('temp.hal', 'w') as f:
