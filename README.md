@@ -21,8 +21,11 @@ The Mesa Configuration Tool requires Python 3.6 or newer to work.
 See the [documentation](https://gnipsel.com/mesa/mesact/index.html) for installation and
 usage instructions.
 
-Note: The Mesa requires LinuxCNC 2.8 Uspace or newer to work.
+Note: The Mesa 7i96 requires LinuxCNC 2.8 Uspace or newer to work.
 [LinuxCNC 2.8](https://gnipsel.com/linuxcnc/uspace/debian10-emc.html)
+
+Note: The Mesa 7i96S requires LinuxCNC 2.9 (Master) or newer to work and it
+requires Mesaflash 3.4.3 or newer to flash or read the board.
 
 This has also been tested on Linux Mint 20.2
 
