@@ -484,8 +484,11 @@ QGroupBox::title {
            </property>
            <item row="1" column="5">
             <widget class="QPushButton" name="reloadPB">
+             <property name="toolTip">
+              <string>Reload Firmware after Flashing</string>
+             </property>
              <property name="statusTip">
-              <string>Reload Firmware</string>
+              <string/>
              </property>
              <property name="text">
               <string>Reload</string>
@@ -494,8 +497,12 @@ QGroupBox::title {
            </item>
            <item row="1" column="2">
             <widget class="QPushButton" name="readpdPB">
+             <property name="toolTip">
+              <string>Read Pin Descriptions
+from board</string>
+             </property>
              <property name="statusTip">
-              <string>Read Pin Descriptions from board</string>
+              <string/>
              </property>
              <property name="text">
               <string>Read PD</string>
@@ -504,8 +511,12 @@ QGroupBox::title {
            </item>
            <item row="1" column="4">
             <widget class="QPushButton" name="flashPB">
+             <property name="toolTip">
+              <string>Flash Selected Firmware
+to the Board</string>
+             </property>
              <property name="statusTip">
-              <string>Flash Firmware</string>
+              <string/>
              </property>
              <property name="text">
               <string>Flash</string>
@@ -530,6 +541,10 @@ QGroupBox::title {
            </item>
            <item row="1" column="6">
             <widget class="QPushButton" name="verifyPB">
+             <property name="toolTip">
+              <string>Verify Selected Firmware
+is the same as the board</string>
+             </property>
              <property name="text">
               <string>Verify</string>
              </property>
@@ -542,7 +557,7 @@ QGroupBox::title {
 to the clipboard</string>
              </property>
              <property name="statusTip">
-              <string>Copy to Clipboard</string>
+              <string/>
              </property>
              <property name="text">
               <string>Copy</string>
@@ -551,8 +566,11 @@ to the clipboard</string>
            </item>
            <item row="1" column="3">
             <widget class="QPushButton" name="readhmidPB">
-             <property name="statusTip">
+             <property name="toolTip">
               <string>Read Card Pins</string>
+             </property>
+             <property name="statusTip">
+              <string/>
              </property>
              <property name="text">
               <string>Read HMID</string>
