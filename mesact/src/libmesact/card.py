@@ -44,11 +44,13 @@ def checkCard(parent):
 			return
 
 	elif parent.boardType == 'pci':
-		password = getPassword(parent)
-		if password != None:
+		if not parent.password:
+			password = getPassword(parent)
+			parent.password = password
+		if parent.password != None:
 			p = Popen(['sudo', '-S', 'mesaflash', '--device', board],
 				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-			prompt = p.communicate(password + '\n')
+			prompt = p.communicate(parent.password + '\n')
 	if prompt:
 		getResults(parent, prompt, p.returncode)
 
@@ -67,11 +69,13 @@ def readpd(parent):
 			return
 
 	elif parent.boardType == 'pci':
-		password = getPassword(parent)
-		if password != None:
+		if not parent.password:
+			password = getPassword(parent)
+			parent.password = password
+		if parent.password != None:
 			p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--print-pd'],
 				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-			prompt = p.communicate(password + '\n')
+			prompt = p.communicate(parent.password + '\n')
 	if prompt:
 		getResults(parent, prompt, p.returncode)
 
@@ -90,11 +94,13 @@ def readhmid(parent):
 			return
 
 	elif parent.boardType == 'pci':
-		password = getPassword(parent)
-		if password != None:
+		if not parent.password:
+			password = getPassword(parent)
+			parent.password = password
+		if parent.password != None:
 			p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--readhmid'],
 				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-			prompt = p.communicate(password + '\n')
+			prompt = p.communicate(parent.password + '\n')
 
 	if prompt:
 		getResults(parent, prompt, p.returncode)
@@ -117,11 +123,13 @@ def flashCard(parent):
 				return
 
 		elif parent.boardType == 'pci':
-			password = getPassword(parent)
-			if password != None:
+			if not parent.password:
+				password = getPassword(parent)
+				parent.password = password
+			if parent.password != None:
 				p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--write', firmware],
 					stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-				prompt = p.communicate(password + '\n')
+				prompt = p.communicate(parent.password + '\n')
 
 		if prompt:
 			getResults(parent, prompt, p.returncode)
@@ -145,11 +153,13 @@ def reloadCard(parent):
 			return
 
 	elif parent.boardType == 'pci':
-		password = getPassword(parent)
-		if password != None:
+		if not parent.password:
+			password = getPassword(parent)
+			parent.password = password
+		if parent.password != None:
 			p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--reload'],
 				stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-			prompt = p.communicate(password + '\n')
+			prompt = p.communicate(parent.password + '\n')
 
 	if prompt:
 		getResults(parent, prompt, p.returncode)
@@ -171,11 +181,13 @@ def verifyCard(parent):
 				return
 
 		elif parent.boardType == 'pci':
-			password = getPassword(parent)
-			if password != None:
+			if not parent.password:
+				password = getPassword(parent)
+				parent.password = password
+			if parent.password != None:
 				p = Popen(['sudo', '-S', 'mesaflash', '--device', parent.device, '--verify', firmware],
 					stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
-				prompt = p.communicate(password + '\n')
+				prompt = p.communicate(parent.password + '\n')
 
 		if prompt:
 			getResults(parent, prompt, p.returncode)
