@@ -10848,7 +10848,7 @@ class Ui_mainWindow(object):
 "including the dash and underscore.\n"
 "Spaces are replaced with underscore."))
         self.loadConfigCB.setText(_translate("mainWindow", "Load this Configuration at Startup"))
-        self.testPB.setText(_translate("mainWindow", "Test"))
+        self.testPB.setText(_translate("mainWindow", "Password Test"))
         self.gridGroupBox_2.setTitle(_translate("mainWindow", "Configuration Setup"))
         self.label_193.setText(_translate("mainWindow", "Daughter Card"))
         self.label_60.setText(_translate("mainWindow", "Daughter Card"))
@@ -10876,7 +10876,8 @@ class Ui_mainWindow(object):
         self.copyPB.setToolTip(_translate("mainWindow", "Copy the Output\n"
 "to the clipboard"))
         self.copyPB.setText(_translate("mainWindow", "Copy"))
-        self.readhmidPB.setToolTip(_translate("mainWindow", "Read Card Pins"))
+        self.readhmidPB.setToolTip(_translate("mainWindow", "Read hostmot2 in\n"
+"PIN file format"))
         self.readhmidPB.setText(_translate("mainWindow", "Read HMID"))
         self.label_292.setText(_translate("mainWindow", "Press F1 for help on current tab"))
         self.mainTabs.setTabText(self.mainTabs.indexOf(self.machine), _translate("mainWindow", "Machine"))

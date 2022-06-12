@@ -269,7 +269,7 @@ Spaces are replaced with underscore.</string>
            <item row="2" column="3">
             <widget class="QPushButton" name="testPB">
              <property name="text">
-              <string>Test</string>
+              <string>Password Test</string>
              </property>
             </widget>
            </item>
