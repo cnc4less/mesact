@@ -567,7 +567,8 @@ to the clipboard</string>
            <item row="1" column="3">
             <widget class="QPushButton" name="readhmidPB">
              <property name="toolTip">
-              <string>Read Card Pins</string>
+              <string>Read hostmot2 in
+PIN file format</string>
              </property>
              <property name="statusTip">
               <string/>
