@@ -344,50 +344,50 @@ def checkit(parent):
 
 	# check the Spindle Tab for errors
 
-	if parent.spindlepidGB.isEnabled():
+	if parent.spindleTypeCB.currentData():
 		if parent.spindleMaxRpm.value() != parent.maxOutput_s.value():
 			tabError = True
 			configErrors.append(f'\tPID Max Output {parent.maxOutput_s.value()} needs to match Max RPM {parent.spindleMaxRpm.value()}')
 
-	if parent.spindleTypeCB.currentData() == 'analog':
-		if not parent.spindlePwmTypeCB.currentData():
-			tabError = True
-			configErrors.append(f'\tAnalog spindle PWM Type must be selected')
-
-	#print(parent.spindleTypeCB.currentData()[:7])
-	if parent.spindleTypeCB.currentData()[:7] == 'stepgen':
-		#print('stepgen')
-		if not parent.spindleStepTime.text():
-			tabError = True
-			configErrors.append(f'\tThe Step Time for Spindle must be specified')
-		else: # make sure it's a valid number
-			if not isNumber(parent.spindleStepTime.text()):
+		if parent.spindleTypeCB.currentData() == 'analog':
+			if not parent.spindlePwmTypeCB.currentData():
 				tabError = True
-				configErrors.append(f'\tThe Step Time for Spindle {validNumber}')
+				configErrors.append(f'\tAnalog spindle PWM Type must be selected')
 
-		if not parent.spindleStepSpace.text():
-			tabError = True
-			configErrors.append(f'\tThe Step Space for Spindle must be specified')
-		else: # make sure it's a valid number
-			if not isNumber(parent.spindleStepSpace.text()):
+		#print(parent.spindleTypeCB.currentData()[:7])
+		if parent.spindleTypeCB.currentData()[:7] == 'stepgen':
+			#print('stepgen')
+			if not parent.spindleStepTime.text():
 				tabError = True
-				configErrors.append(f'\tThe Step Space for Spindle {validNumber}')
+				configErrors.append(f'\tThe Step Time for Spindle must be specified')
+			else: # make sure it's a valid number
+				if not isNumber(parent.spindleStepTime.text()):
+					tabError = True
+					configErrors.append(f'\tThe Step Time for Spindle {validNumber}')
 
-		if not parent.spindleDirSetup.text():
-			tabError = True
-			configErrors.append(f'\tThe Direction Setup for Spindle must be specified')
-		else: # make sure it's a valid number
-			if not isNumber(parent.spindleDirSetup.text()):
+			if not parent.spindleStepSpace.text():
 				tabError = True
-				configErrors.append(f'\tThe Direction Setup for Spindle {validNumber}')
+				configErrors.append(f'\tThe Step Space for Spindle must be specified')
+			else: # make sure it's a valid number
+				if not isNumber(parent.spindleStepSpace.text()):
+					tabError = True
+					configErrors.append(f'\tThe Step Space for Spindle {validNumber}')
 
-		if not parent.spindleDirHold.text():
-			tabError = True
-			configErrors.append(f'\tThe Direction Hold for Spindle must be specified')
-		else: # make sure it's a valid number
-			if not isNumber(parent.spindleDirHold.text()):
+			if not parent.spindleDirSetup.text():
 				tabError = True
-				configErrors.append(f'\tThe Direction Hold for Spindle {validNumber}')
+				configErrors.append(f'\tThe Direction Setup for Spindle must be specified')
+			else: # make sure it's a valid number
+				if not isNumber(parent.spindleDirSetup.text()):
+					tabError = True
+					configErrors.append(f'\tThe Direction Setup for Spindle {validNumber}')
+
+			if not parent.spindleDirHold.text():
+				tabError = True
+				configErrors.append(f'\tThe Direction Hold for Spindle must be specified')
+			else: # make sure it's a valid number
+				if not isNumber(parent.spindleDirHold.text()):
+					tabError = True
+					configErrors.append(f'\tThe Direction Hold for Spindle {validNumber}')
 
 
 
