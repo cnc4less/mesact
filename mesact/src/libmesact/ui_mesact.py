@@ -142,9 +142,6 @@ class Ui_mainWindow(object):
         self.loadConfigCB = QtWidgets.QCheckBox(self.gridGroupBox)
         self.loadConfigCB.setObjectName("loadConfigCB")
         self.gridLayout_46.addWidget(self.loadConfigCB, 4, 3, 1, 2)
-        self.testPB = QtWidgets.QPushButton(self.gridGroupBox)
-        self.testPB.setObjectName("testPB")
-        self.gridLayout_46.addWidget(self.testPB, 2, 3, 1, 1)
         self.gridLayout_49.addWidget(self.gridGroupBox, 0, 0, 3, 1)
         self.gridGroupBox_2 = QtWidgets.QGroupBox(self.machine)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
@@ -10818,7 +10815,7 @@ class Ui_mainWindow(object):
         self.toolBar.addAction(self.actionDocuments)
 
         self.retranslateUi(mainWindow)
-        self.mainTabs.setCurrentIndex(3)
+        self.mainTabs.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(0)
         self.tabWidget_3.setCurrentIndex(0)
         self.boardTW.setCurrentIndex(0)
@@ -10848,7 +10845,6 @@ class Ui_mainWindow(object):
 "including the dash and underscore.\n"
 "Spaces are replaced with underscore."))
         self.loadConfigCB.setText(_translate("mainWindow", "Load this Configuration at Startup"))
-        self.testPB.setText(_translate("mainWindow", "Password Test"))
         self.gridGroupBox_2.setTitle(_translate("mainWindow", "Configuration Setup"))
         self.label_193.setText(_translate("mainWindow", "Daughter Card"))
         self.label_60.setText(_translate("mainWindow", "Daughter Card"))

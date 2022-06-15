@@ -119,8 +119,6 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		for i in range(2):
 			getattr(self, f'daughterCB_{i}').currentIndexChanged.connect(partial(utilities.daughterCardChanged, self))
 
-		self.testPB.clicked.connect(partial(card.getPassword, self))
-
 		# Board Group
 		self.checkBoardPB.clicked.connect(partial(card.checkCard, self))
 

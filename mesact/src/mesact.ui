@@ -45,7 +45,7 @@ QGroupBox::title {
 }</string>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <property name="movable">
        <bool>false</bool>
@@ -263,13 +263,6 @@ Spaces are replaced with underscore.</string>
             <widget class="QCheckBox" name="loadConfigCB">
              <property name="text">
               <string>Load this Configuration at Startup</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="3">
-            <widget class="QPushButton" name="testPB">
-             <property name="text">
-              <string>Password Test</string>
              </property>
             </widget>
            </item>
