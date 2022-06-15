@@ -45,7 +45,7 @@ QGroupBox::title {
 }</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <property name="movable">
        <bool>false</bool>
@@ -9179,7 +9179,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="0" column="3">
-                  <widget class="QCheckBox" name="c1_stepInvert_0">
+                  <widget class="QCheckBox" name="c1_StepInvert_0">
                    <property name="text">
                     <string>Invert Step</string>
                    </property>
@@ -9306,7 +9306,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="2" column="3">
-                  <widget class="QCheckBox" name="c1_dirInvert_0">
+                  <widget class="QCheckBox" name="c1_DirInvert_0">
                    <property name="text">
                     <string>Invert Direction</string>
                    </property>
@@ -10473,7 +10473,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="0" column="3">
-                  <widget class="QCheckBox" name="c1_stepInvert_1">
+                  <widget class="QCheckBox" name="c1_StepInvert_1">
                    <property name="text">
                     <string>Invert Step</string>
                    </property>
@@ -10600,7 +10600,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="2" column="3">
-                  <widget class="QCheckBox" name="c1_dirInvert_1">
+                  <widget class="QCheckBox" name="c1_DirInvert_1">
                    <property name="text">
                     <string>Invert Direction</string>
                    </property>
@@ -11585,7 +11585,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="0" column="3">
-                  <widget class="QCheckBox" name="c1_stepInvert_2">
+                  <widget class="QCheckBox" name="c1_StepInvert_2">
                    <property name="text">
                     <string>Invert Step</string>
                    </property>
@@ -11712,7 +11712,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="2" column="3">
-                  <widget class="QCheckBox" name="c1_dirInvert_2">
+                  <widget class="QCheckBox" name="c1_DirInvert_2">
                    <property name="text">
                     <string>Invert Direction</string>
                    </property>
@@ -12438,7 +12438,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="0" column="3">
-                  <widget class="QCheckBox" name="c1_stepInvert_3">
+                  <widget class="QCheckBox" name="c1_StepInvert_3">
                    <property name="text">
                     <string>Invert Step</string>
                    </property>
@@ -12565,7 +12565,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="2" column="3">
-                  <widget class="QCheckBox" name="c1_dirInvert_3">
+                  <widget class="QCheckBox" name="c1_DirInvert_3">
                    <property name="text">
                     <string>Invert Direction</string>
                    </property>
@@ -13732,7 +13732,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="0" column="3">
-                  <widget class="QCheckBox" name="c1_stepInvert_4">
+                  <widget class="QCheckBox" name="c1_StepInvert_4">
                    <property name="text">
                     <string>Invert Step</string>
                    </property>
@@ -13859,7 +13859,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="2" column="3">
-                  <widget class="QCheckBox" name="c1_dirInvert_4">
+                  <widget class="QCheckBox" name="c1_DirInvert_4">
                    <property name="text">
                     <string>Invert Direction</string>
                    </property>
@@ -14896,7 +14896,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="0" column="3">
-                  <widget class="QCheckBox" name="c1_stepInvert_5">
+                  <widget class="QCheckBox" name="c1_StepInvert_5">
                    <property name="text">
                     <string>Invert Step</string>
                    </property>
@@ -15023,7 +15023,7 @@ max speed</string>
                   </widget>
                  </item>
                  <item row="2" column="3">
-                  <widget class="QCheckBox" name="c1_dirInvert_5">
+                  <widget class="QCheckBox" name="c1_DirInvert_5">
                    <property name="text">
                     <string>Invert Direction</string>
                    </property>
