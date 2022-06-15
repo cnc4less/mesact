@@ -216,9 +216,10 @@ def o7i96s(parent):
 	pass
 
 def d7i97(parent):
-	pass
 	daughters = {
-	'':['', ''],
+	'7i97_7i76d.bit':['7i76', False],
+	'7i97_7i78D.bit':['7i78', False],
+	'7i97_D.bit':[False, False],
 		}
 	return daughters
 
