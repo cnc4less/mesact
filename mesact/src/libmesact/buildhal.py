@@ -220,32 +220,32 @@ def build(parent):
 		if not parent.spindleFeedbackCB.currentData():
 			halContents.append('sets spindle-at-speed true\n')
 
-	if parent.spindleTypeCB.currentData() == 'analog':
-		halContents.append('\n# Spindle Board Connections\n')
-		halContents.append(f'net spindle-on => hm2_{board}.0.pwmgen.00.enable\n')
-		halContents.append(f'net spindle-vel-cmd-rpm hm2_{board}.0.pwmgen.00.value\n')
-		halContents.append(f'setp hm2_{board}.0.pwmgen.00.scale [SPINDLE]MAX_RPM\n')
-		halContents.append(f'setp hm2_{board}.0.pwmgen.pwm_frequency [SPINDLE]PWM_FREQUENCY\n')
-		halContents.append(f'setp hm2_{board}.0.pwmgen.00.output-type [SPINDLE]SPINDLE_PWM_TYPE\n')
+		if parent.spindleTypeCB.currentData() == 'analog':
+			halContents.append('\n# Spindle Board Connections\n')
+			halContents.append(f'net spindle-on => hm2_{board}.0.pwmgen.00.enable\n')
+			halContents.append(f'net spindle-vel-cmd-rpm hm2_{board}.0.pwmgen.00.value\n')
+			halContents.append(f'setp hm2_{board}.0.pwmgen.00.scale [SPINDLE]MAX_RPM\n')
+			halContents.append(f'setp hm2_{board}.0.pwmgen.pwm_frequency [SPINDLE]PWM_FREQUENCY\n')
+			halContents.append(f'setp hm2_{board}.0.pwmgen.00.output-type [SPINDLE]SPINDLE_PWM_TYPE\n')
 
-	if parent.spindleTypeCB.currentData()[:7] == 'stepgen':
-		s = parent.spindleTypeCB.currentData()[-1]
-		halContents.append(f'\nnet spindle-on hm2_{board}.0.stepgen.0{s}.enable\n')
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.dirsetup [SPINDLE]DIRSETUP\n')
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.dirhold [SPINDLE]DIRHOLD\n')
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.steplen [SPINDLE]STEPLEN\n')
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.stepspace [SPINDLE]STEPSPACE\n')
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.position-scale [SPINDLE]SCALE\n')
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.position-scale [SPINDLE]SCALE\n')
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.maxvel [SPINDLE]MAX_RPS\n')
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.maxaccel [SPINDLE]MAX_ACCEL_RPS\n')
+		if parent.spindleTypeCB.currentData()[:7] == 'stepgen':
+			s = parent.spindleTypeCB.currentData()[-1]
+			halContents.append(f'\nnet spindle-on hm2_{board}.0.stepgen.0{s}.enable\n')
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.dirsetup [SPINDLE]DIRSETUP\n')
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.dirhold [SPINDLE]DIRHOLD\n')
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.steplen [SPINDLE]STEPLEN\n')
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.stepspace [SPINDLE]STEPSPACE\n')
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.position-scale [SPINDLE]SCALE\n')
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.position-scale [SPINDLE]SCALE\n')
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.maxvel [SPINDLE]MAX_RPS\n')
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.maxaccel [SPINDLE]MAX_ACCEL_RPS\n')
 
-		# need to set scale and other stuff first
-		halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.control-type 1\n\n')
-		halContents.append(f'net spindle-vel-cmd-rps =>  hm2_{board}.0.stepgen.0{s}.velocity-cmd\n')
+			# need to set scale and other stuff first
+			halContents.append(f'setp hm2_{board}.0.stepgen.0{s}.control-type 1\n\n')
+			halContents.append(f'net spindle-vel-cmd-rps =>  hm2_{board}.0.stepgen.0{s}.velocity-cmd\n')
 
-		# net s-output <= spindle.0.speed−out
-		# hm2_7i96s.0.stepgen.04.velocity-cmd
+			# net s-output <= spindle.0.speed−out
+			# hm2_7i96s.0.stepgen.04.velocity-cmd
 
 	if parent.spindleFeedbackCB.currentData() == 'encoder':
 		s = pids - 1
