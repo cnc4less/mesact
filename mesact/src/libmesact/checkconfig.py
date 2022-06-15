@@ -345,14 +345,13 @@ def checkit(parent):
 	# check the Spindle Tab for errors
 
 	if parent.spindleTypeCB.currentData():
-		if parent.spindleMaxRpm.value() != parent.maxOutput_s.value():
-			tabError = True
-			configErrors.append(f'\tPID Max Output {parent.maxOutput_s.value()} needs to match Max RPM {parent.spindleMaxRpm.value()}')
-
 		if parent.spindleTypeCB.currentData() == 'analog':
 			if not parent.spindlePwmTypeCB.currentData():
 				tabError = True
 				configErrors.append(f'\tAnalog spindle PWM Type must be selected')
+			if parent.spindleMaxRpm.value() != parent.maxOutput_s.value():
+				tabError = True
+				configErrors.append(f'\tPID Max Output {parent.maxOutput_s.value()} needs to match Max RPM {parent.spindleMaxRpm.value()}')
 
 		#print(parent.spindleTypeCB.currentData()[:7])
 		if parent.spindleTypeCB.currentData()[:7] == 'stepgen':
