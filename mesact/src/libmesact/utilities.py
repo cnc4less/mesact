@@ -86,7 +86,6 @@ def firmwareChanged(parent):
 		# might combine these
 		elif  parent.boardCB.currentData() in ALL_IN_ONE_BOARDS:
 			daughters = getattr(firmware, f'd{parent.board}')(parent)
-			print(daughters)
 			if daughters:
 				if parent.firmwareCB.currentText() in daughters:
 					cards = daughters[parent.firmwareCB.currentText()]
