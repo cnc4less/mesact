@@ -160,6 +160,8 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.card7i76LB.setPixmap(pixmap)
 		pixmap = QPixmap(os.path.join(self.image_path, '7i77-card.png'))
 		self.card7i77LB.setPixmap(pixmap)
+		pixmap = QPixmap(os.path.join(self.image_path, '7i78-card.png'))
+		self.card7i78LB.setPixmap(pixmap)
 		pixmap = QPixmap(os.path.join(self.image_path, '7i85-card.png'))
 		self.card7i85LB.setPixmap(pixmap)
 		pixmap = QPixmap(os.path.join(self.image_path, '7i88-card.png'))
