@@ -279,7 +279,7 @@ def build(parent):
 
 	# build the [INPUTS] section from pushbuttons
 	iniContents.append('\n[INPUTS]\n')
-	iniContents.append('# DO NOT change the inputs text\n')
+	iniContents.append('# DO NOT change the inputs they are used by the configuration tool\n')
 	for i in range(32):
 		iniContents.append(f'INPUT_{i} = {getattr(parent, "inputPB_" + str(i)).text()}\n')
 		iniContents.append(f'INPUT_INVERT_{i} = {getattr(parent, "inputInvertCB_" + str(i)).isChecked()}\n')
@@ -287,13 +287,13 @@ def build(parent):
 
 	# build the [OUTPUTS] section from pushbuttons
 	iniContents.append('\n[OUTPUTS]\n')
-	iniContents.append('# DO NOT change the outputs text\n')
+	iniContents.append('# DO NOT change the outputs they are used by the configuration tool\n')
 	for i in range(16):
 		iniContents.append(f'OUTPUT_{i} = {getattr(parent, "outputPB_" + str(i)).text()}\n')
 
 	# build the [OPTIONS] section
 	iniContents.append('\n[OPTIONS]\n')
-	iniContents.append('# DO NOT change the options text\n')
+	iniContents.append('# DO NOT change the options they are used by the configuration tool\n')
 	iniContents.append(f'LOAD_CONFIG = {parent.loadConfigCB.isChecked()}\n')
 	iniContents.append(f'INTRO_GRAPHIC = {parent.introGraphicLE.text()}\n')
 	iniContents.append(f'INTRO_GRAPHIC_TIME = {parent.splashScreenSB.value()}\n')
@@ -314,7 +314,7 @@ def build(parent):
 	# build the [SSERIAL] section
 	if parent.ssCardCB.currentData():
 		iniContents.append('\n[SSERIAL]\n')
-		iniContents.append('# DO NOT change the sserial text\n')
+		iniContents.append('# DO NOT change the sserial they are used by the configuration tool\n')
 		iniContents.append(f'ssCardCB = {parent.ssCardCB.currentText()}\n')
 	if parent.ssCardCB.currentText() == '7i64':
 		# 24 ss7i64in_
