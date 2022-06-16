@@ -189,13 +189,13 @@ def daughterCardChanged(parent):
 	parent.cardTabs.setTabText(0, parent.sender().currentData())
 	parent.cardType_0 = cardType[parent.sender().currentData()]
 
-	if axes[parent.sender().currentData()] == '6':
+	if axes[parent.sender().currentData()] == 6:
 		parent.jointTabs_0.setTabEnabled(4, True)
 		parent.jointTabs_0.setTabEnabled(5, True)
-	elif axes[parent.sender().currentData()] == '5':
+	elif axes[parent.sender().currentData()] == 5:
 		parent.jointTabs_0.setTabEnabled(4, True)
 		parent.jointTabs_0.setTabEnabled(5, False)
-	elif axes[parent.sender().currentData()] == '4':
+	elif axes[parent.sender().currentData()] == 4:
 		parent.jointTabs_0.setTabEnabled(4, False)
 		parent.jointTabs_0.setTabEnabled(5, False)
 
