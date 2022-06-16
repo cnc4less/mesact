@@ -259,7 +259,8 @@ def build(parent):
 	['7i78', '7i78man.pdf'],
 	['7i85', '7i85man.pdf'],
 	['7i85s', '7i85sman.pdf'],
-	['7i88', '7i88man.pdf']
+	['7i88', '7i88man.pdf'],
+	['7i89', '7i89man.pdf']
 	]
 
 	for item in dauCardDocs:
