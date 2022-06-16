@@ -210,7 +210,15 @@ def o7i96(parent):
 	return options
 
 def d7i96s(parent):
-	pass
+	daughters = {
+	'7i96s_7i76d.bin':['7i76', False],
+	'7i96s_7i77d.bin':['7i77', False],
+	'7i96s_7i78d.bin':['7i78', False],
+	'7i96s_7i85d.bin':['7i85', False],
+	'7i96s_7i85sd.bin':['7i85s', False],
+	'7i96s_7i89d.bin':['7i89', False],
+		}
+	return daughters
 
 def o7i96s(parent):
 	pass
