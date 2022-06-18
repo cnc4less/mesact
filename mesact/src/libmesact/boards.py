@@ -200,7 +200,7 @@ def boardChanged(parent):
 			'SPINENA OPTO output is on.\n')
 			parent.spindlePTE.setPlainText(spinnotes)
 
-		elif parent.boardCB.currentData() == '7i80db_16':
+		elif parent.boardCB.currentData() == '7i80db-16':
 			parent.boardType = 'eth'
 			parent.cardType_0 = ''
 			parent.mainTabs.setTabEnabled(3, False)
@@ -232,7 +232,7 @@ def boardChanged(parent):
 			parent.ssWiringPTE.clear()
 
 
-		elif parent.boardCB.currentData() == '7i80db_25':
+		elif parent.boardCB.currentData() == '7i80db-25':
 			parent.boardType = 'eth'
 			parent.cardType_0 = ''
 			parent.mainTabs.setTabEnabled(3, False)
@@ -262,7 +262,7 @@ def boardChanged(parent):
 			parent.ssNotesGB.setEnabled(False)
 			parent.ssWiringPTE.clear()
 
-		elif parent.boardCB.currentData() == '7i80hd_16':
+		elif parent.boardCB.currentData() == '7i80hd-16':
 			parent.boardType = 'eth'
 			parent.cardType_0 = ''
 			parent.mainTabs.setTabEnabled(3, False)
@@ -303,7 +303,7 @@ def boardChanged(parent):
 			parent.ssNotesGB.setEnabled(False)
 			parent.ssWiringPTE.clear()
 
-		elif parent.boardCB.currentData() == '7i80hd_25':
+		elif parent.boardCB.currentData() == '7i80hd-25':
 			parent.boardType = 'eth'
 			parent.cardType_0 = ''
 			parent.mainTabs.setTabEnabled(3, False)
