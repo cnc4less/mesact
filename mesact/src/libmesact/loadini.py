@@ -53,11 +53,9 @@ def openini(parent, configName = ''):
 				if parent.errorMsg(msg, 'Version Difference'):
 					loadini(parent, iniFile)
 		else:
-			msg = ('This ini file may have been built with an older version\n'
-				'Try and open?')
-			if parent.errorMsg(msg, 'No Version'):
-				loadini(parent, iniFile)
-		loadReadMe(parent, configName)
+			msg = ('This ini was not created with the\n'
+				'Mesa Configuration Tool!')
+			parent.errorMsgOk(msg, 'Incompatable File')
 
 def loadini(parent, iniFile):
 	# Section, Item, Object Name
