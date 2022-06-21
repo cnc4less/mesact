@@ -6,13 +6,13 @@ def build(parent):
 	if os.path.exists(filePath):
 		os.remove(filePath)
 	if parent.ssCardCB.currentData():
+		ssCard = parent.ssCardCB.currentText()
+		board = parent.board
 		parent.machinePTE.appendPlainText(f'Building {filePath}')
 		contents = []
-		contents = ['# This file was created with the 7i92 Wizard on ']
+		contents = ['# This file was created with the Mesa Configuration Tool on ']
 		contents.append(datetime.now().strftime('%b %d %Y %H:%M:%S') + '\n')
 		contents.append('# If you make changes to this file DO NOT use the Configuration Tool\n\n')
-		if parent.ssCardCB.currentIndex() > 0:
-			contents.append(f'# Configuration file for the {parent.ssCardCB.currentText()} Smart Serial Card\n\n')
 
 		input_dict = {
 			'Joint 0 Home':'net joint-0-home joint.0.home-sw-in <= ',
@@ -94,7 +94,45 @@ def build(parent):
 			'Lube Level':'net lube-level iocontrol.0.lube_level <= ',
 			'Tool Changed':'net tool-changed iocontrol.0.tool-changed <= ',
 			'Tool Prepared':'net tool-prepared iocontrol.0.tool-prepared <= '
-			}
+		}
+
+
+		'''
+		hm2_7i76e.0.7i76.0.0.input-00
+		hm2_7i76e.0.7i76.0.0.input-00-not
+		hm2_7i76e.0.7i76.0.0.output-00
+		hm2_7i76e.0.7i76.0.0.spindir
+		hm2_7i76e.0.7i76.0.0.spinena
+		hm2_7i76e.0.7i76.0.0.spinout
+
+		hm2_7i92.0.7i76.0.0.input-00
+		hm2_7i92.0.7i76.0.0.input-00-not
+		hm2_7i92.0.7i76.0.0.output-00
+		hm2_7i92.0.7i76.0.0.spindir
+		hm2_7i92.0.7i76.0.0.spinena
+		hm2_7i92.0.7i76.0.0.spinout
+
+		hm2_7i95.0.inmux.00.input-00
+		hm2_7i95.0.inmux.00.input-00-not
+		hm2_7i95.0.inmux.00.input-00-slow
+
+
+		hm2_7i96.0.gpio.000.in
+		hm2_7i96.0.gpio.000.in_not
+
+		hm2_7i96s.0.inm.00.input-01
+		hm2_7i96s.0.inm.00.input-01-not
+		hm2_7i96s.0.inm.00.input-00-slow
+
+
+		hm2_7i97.0.inmux.00.input-00
+		hm2_7i97.0.inmux.00.input-00-not
+		hm2_7i97.0.inmux.00.input-00-slow
+		'''
+
+		'''
+		if parent.ssCardCB.currentIndex() > 0:
+			contents.append(f'# Configuration file for the {parent.ssCardCB.currentText()} Smart Serial Card\n\n')
 
 		# build inputs from qpushbutton menus
 		for i in range(11):
@@ -117,18 +155,91 @@ def build(parent):
 					contents.append('net estop-loopin iocontrol.0.user-enable-out => estop-latch.0.ok-in\n')
 					contents.append('net estop-reset iocontrol.0.user-request-enable => estop-latch.0.reset\n')
 					contents.append(f'net remote-estop estop-latch.0.fault-in <= hm2_7i92.0.gpio.{i:03}.in{invert}\n\n')
+		'''
+
+		if ssCard == '7i64':
+			inputs = 24
+			outputs = 24
+		elif ssCard == '7i69':
+			inputs = 24
+			outputs = 24
+		elif ssCard == '7i70':
+			inputs = 48
+			outputs = 0
+		elif ssCard == '7i71':
+			inputs = 0
+			outputs = 48
+		elif ssCard == '7i72':
+			inputs = 0
+			outputs = 48
+		elif ssCard == '7i73':
+			inputs = 0
+			outputs = 0
+		elif ssCard == '7i84':
+			inputs = 32
+			outputs = 16
+		elif ssCard == '7i87':
+			inputs = 8
+			outputs = 0
+		else:
+			inputs = 0
+			outputs = 0
+
+		motherBoards = ['5i25', '7i80db', '7i80hd', '7i92', '7i93', '7i98']
+		daughterBoards =['7i76', '7i77', '7i78']
+
+		'''
+		if parent.board in motherBoards:
+			if parent.daughterCB_0.currentData():
+				card = parent.daughterCB_0.currentText()
+			elif parent.daughterCB_1.currentData():
+				card = parent.daughterCB_1.currentText()
+				if card in daughterBoards: # use input-00-not and output-00
+					hm2 =  f'hm2_{parent.board}.0.{card}.0.0.input-{i:02}{invert}\n'
+		if parent.board == '7i76e':
+			hm2 =  f'hm2_7i76e.0.7i76.0.0.input-{i:02}{invert}\n'
+		if parent.board == '7i95':
+			hm2 =  f'hm2_7i95.0.inmux.00.input-{i:02}{invert}\n'
+		if parent.board == '7i96':
+			invert = '_not' if getattr(parent, 'inputInvertCB_' + str(i)).isChecked() else ''
+			hm2 =  f'hm2_7i96.0.gpio.{i:03}.in{invert}\n'
+		if parent.board == '7i96s':
+			hm2 =  f'hm2_7i96s.0.inm.00.input-{i:02}{invert}{slow}\n'
+		if parent.board == '7i97':
+			hm2 =  f'hm2_7i97.0.inmux.00.input-{i:02}{invert}{slow}\n'
+		'''
+
+		combiBoards = ['7i76e', '7i95', '7i96', '7i96s', '7i97']
+		if ssCard != '7i73' and board in combiBoards:
+			for i in range(inputs):
+				if getattr(parent, f'ss{ssCard}in_' + str(i)).text() != 'Select':
+					inPin = getattr(parent, f'ss{ssCard}in_' + str(i)).text()
+					contents.append(f'net ss{ssCard}in_{i} hm2_{board}.0.{ssCard}.0.0.input-{i:02} <= {inPin}\n')
+			for i in range(outputs):
+				if getattr(parent, f'ss{ssCard}out_' + str(i)).text() != 'Select':
+					outPin = getattr(parent, f'ss{ssCard}out_' + str(i)).text()
+					contents.append(f'net ss{ssCard}out_{i} hm2_{board}.0.{ssCard}.0.0.output-{i:02} => {outPin}\n')
+
+		elif ssCard == '7i73':
+			for i in range(16):
+				if getattr(parent, 'ss7i73key_' + str(i)).text() != 'Select':
+					keyPin = getattr(parent, 'ss7i73key_' + str(i)).text()
+					contents.append(f'net ss7i73key_{i} hm2_{board}.0.7i73.0.0.input-{i:02} <= {keyPin}\n')
+			for i in range(12):
+				if getattr(parent, 'ss7i73lcd_' + str(i)).text() != 'Select':
+					lcdPin = getattr(parent, 'ss7i73lcd_' + str(i)).text()
+					contents.append(f'net ss7i73lcd_{i} hm2_{board}.0.7i73.0.0.output-{i:02} => {lcdPin}\n')
+			for i in range(16):
+				if getattr(parent, 'ss7i73in_' + str(i)).text() != 'Select':
+					inPin = getattr(parent, 'ss7i73in_' + str(i)).text()
+					contents.append(f'net ss7i73in_{i} hm2_{board}.0.7i73.0.0.input-{i:02} <= {inPin}\n')
+			for i in range(2):
+				if getattr(parent, 'ss7i73out_' + str(i)).text() != 'Select':
+					outPin = getattr(parent, 'ss7i73out_' + str(i)).text()
+					contents.append(f'net ss7i73out_{i} hm2_{board}.0.7i84.0.0.output-{i:02} => {outPin}\n')
 
 
-		if parent.ssCardCB.currentText() == '7i64':
-			for i in range(24):
-				if getattr(parent, 'ss7i64in_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, 'ss7i64in_' + str(i)).text()
-					contents.append(f'net ss7i64in_{i} hm2_7i92.0.7i64.0.0.input-{i:02} <= {inPin}\n')
-			for i in range(24):
-				if getattr(parent, 'ss7i64out_' + str(i)).text() != 'Select':
-					outPin = getattr(parent, 'ss7i64out_' + str(i)).text()
-					contents.append(f'net ss7i64out_{i} hm2_7i92.0.7i64.0.0.output-{i:02} => {outPin}\n')
-
+		'''
 		elif parent.ssCardCB.currentText() == '7i69':
 			for i in range(24):
 				if getattr(parent, 'ss7i69in_' + str(i)).text() != 'Select':
@@ -157,23 +268,6 @@ def build(parent):
 					inPin = getattr(parent, 'ss7i72out_' + str(i)).text()
 					contents.append(f'net ss7i72out_{i} hm2_7i92.0.7i72.0.0.output-{i:02} <= {inPin}\n')
 
-		elif parent.ssCardCB.currentText() == '7i73':
-			for i in range(16):
-				if getattr(parent, 'ss7i73key_' + str(i)).text() != 'Select':
-					keyPin = getattr(parent, 'ss7i73key_' + str(i)).text()
-					contents.append(f'net ss7i73key_{i} hm2_7i92.0.7i73.0.0.input-{i:02} <= {keyPin}\n')
-			for i in range(12):
-				if getattr(parent, 'ss7i73lcd_' + str(i)).text() != 'Select':
-					lcdPin = getattr(parent, 'ss7i73lcd_' + str(i)).text()
-					contents.append(f'net ss7i73lcd_{i} hm2_7i92.0.7i73.0.0.output-{i:02} => {lcdPin}\n')
-			for i in range(16):
-				if getattr(parent, 'ss7i73in_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, 'ss7i73in_' + str(i)).text()
-					contents.append(f'net ss7i73in_{i} hm2_7i92.0.7i73.0.0.input-{i:02} <= {inPin}\n')
-			for i in range(2):
-				if getattr(parent, 'ss7i73out_' + str(i)).text() != 'Select':
-					outPin = getattr(parent, 'ss7i73out_' + str(i)).text()
-					contents.append(f'net ss7i73out_{i} hm2_7i92.0.7i84.0.0.output-{i:02} => {outPin}\n')
 
 		elif parent.ssCardCB.currentText() == '7i84':
 			for i in range(32):
@@ -190,6 +284,7 @@ def build(parent):
 				if getattr(parent, 'ss7i87in_' + str(i)).text() != 'Select':
 					inPin = getattr(parent, 'ss7i87in_' + str(i)).text()
 					contents.append(f'net ss7i87in_{i} hm2_7i92.0.7i87.0.0.input-{i:02} <= {inPin}\n')
+		'''
 
 		try:
 			with open(filePath, 'w') as f:

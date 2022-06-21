@@ -27667,9 +27667,9 @@ increasing Thread Period</string>
            <widget class="QLabel" name="label_210">
             <property name="geometry">
              <rect>
-              <x>450</x>
+              <x>440</x>
               <y>350</y>
-              <width>371</width>
+              <width>391</width>
               <height>71</height>
              </rect>
             </property>
@@ -27690,7 +27690,7 @@ try increasing the thread period.</string>
              <rect>
               <x>440</x>
               <y>10</y>
-              <width>381</width>
+              <width>391</width>
               <height>81</height>
              </rect>
             </property>
@@ -27864,6 +27864,26 @@ the configuration.</string>
               </widget>
              </item>
             </layout>
+           </widget>
+           <widget class="QLabel" name="label_51">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>350</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>The Default Packet Time Timeout
+is 80% of the Servo Thread Period</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
            </widget>
           </widget>
          </widget>
