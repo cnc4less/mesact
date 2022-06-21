@@ -1,3 +1,7 @@
+import subprocess
+from subprocess import Popen, PIPE
+from libmesact import card
+
 """
 Usage extcmd.job(self, cmd="something", args="",
 dest=self.QPlainTextEdit, clean="file to delete when done")
@@ -13,20 +17,86 @@ def nicInfo(parent):
 	parent.extcmd.job(cmd="lspci", args=None, dest=parent.infoPTE)
 
 def nicCalc(parent):
-	if parent.tMaxLE.text() != '' and parent.cpuSpeedLE.text() != '':
-		tMax = int(int(parent.tMaxLE.text()) / 1000)
-		cpuSpeed = float(parent.cpuSpeedLE.text()) * parent.cpuSpeedCB.currentData()
+	cpuSpeedText = parent.cpuSpeedLE.text()
+	readtmaxText = parent.readtmaxLE.text()
+	writetmaxText = parent.writetmaxLE.text()
+	if cpuSpeedText != '' and readtmaxText != '' and writetmaxText != '':
+		readtmax = int(int(readtmaxText) / 1000)
+		writetmax = int(int(writetmaxText) / 1000)
+		tMax = readtmax + writetmax
+		cpuSpeed = float(cpuSpeedText) * parent.cpuSpeedCB.currentData()
 		packetTime = tMax / cpuSpeed
 		parent.packetTimeLB.setText('{:.1%}'.format(packetTime))
-		threshold = (cpuSpeed * 0.7) / cpuSpeed
-		parent.thresholdLB.setText('{:.0%}'.format(threshold))
 	else:
 		errorText = []
 		if parent.cpuSpeedLE.text() == '':
 			errorText.append('CPU Speed can not be empty')
-		if parent.tMaxLE.text() == '':
-			errorText.append('tMax can not be empty')
+		if parent.readtmaxLE.text() == '':
+			errorText.append('read.tmax can not be empty')
+		if parent.writetmaxLE.text() == '':
+			errorText.append('write.tmax can not be empty')
 		parent.errorMsgOk('\n'.join(errorText))
 
+def readServoTmax(parent):
+	if "0x48414c32" in subprocess.getoutput('ipcs'):
+		p = Popen(['halcmd', 'show', 'param', 'servo-thread.tmax'],
+			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+		prompt = p.communicate()
+		if prompt:
+			parent.tmaxPTE.appendPlainText(prompt[0])
+			ret = prompt[0].splitlines()
+			parent.servoThreadTmaxLB.setText(ret[2].split()[3])
+	else:
+		parent.errorMsgOk('LinuxCNC must be running this configuration!','Error')
+
+def calcServoPercent(parent):
+	sp = parent.servoPeriodSB.value()
+	stmax = int(parent.servoThreadTmaxLB.text())
+	parent.servoResultLB.setText(f'{(stmax / sp)*100:.0f}%')
+
 def readTmax(parent):
-	parent.extcmd.job(cmd="halcmd", args=['show', 'param', 'hm2*.tmax'], dest=parent.tmaxPTE)
+	if "0x48414c32" in subprocess.getoutput('ipcs'):
+		p = Popen(['halcmd', 'show', 'param', 'hm2*read.tmax'],
+			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+		prompt = p.communicate()
+		if prompt:
+			parent.tmaxPTE.appendPlainText(prompt[0])
+			ret = prompt[0].splitlines()
+			parent.readtmaxLE.setText(ret[2].split()[3])
+	else:
+		parent.errorMsgOk('LinuxCNC must be running this configuration!','Error')
+
+def writeTmax(parent):
+	if "0x48414c32" in subprocess.getoutput('ipcs'):
+		p = Popen(['halcmd', 'show', 'param', 'hm2*write.tmax'],
+			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+		prompt = p.communicate()
+		if prompt:
+			parent.tmaxPTE.appendPlainText(prompt[0])
+			ret = prompt[0].splitlines()
+			parent.writetmaxLE.setText(ret[2].split()[3])
+	else:
+		parent.errorMsgOk('LinuxCNC must be running this configuration!','Error')
+
+
+def cpuSpeed(parent):
+	if not parent.password:
+		password = card.getPassword(parent)
+		parent.password = password
+	if parent.password != None:
+		#sudo dmidecode | grep MHz
+		p = Popen(['sudo', '-S', 'dmidecode'],
+			stdin=PIPE, stderr=PIPE, stdout=PIPE, text=True)
+		prompt = p.communicate(parent.password + '\n')
+	if prompt:
+		#print(type(prompt))
+		#print(len(prompt[0]))
+		#parent.tmaxPTE.appendPlainText(prompt[0]) mickey
+		ret = prompt[0].splitlines()
+		#print(len(ret))
+
+		for line in ret: 
+			if 'MHz' in line:
+				parent.tmaxPTE.appendPlainText(line.strip())
+		#card.getResults(parent, prompt, p.returncode)
+

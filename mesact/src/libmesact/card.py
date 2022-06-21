@@ -3,7 +3,7 @@ from subprocess import Popen, PIPE
 from PyQt5.QtWidgets import QInputDialog, QLineEdit, QDialogButtonBox
 
 def getPassword(parent):
-	dialog = 'You need root privileges\nto access PCI hardware.\nEnter your Password:'
+	dialog = 'You need root privileges\nfor this operation.\nEnter your Password:'
 	password, okPressed = QInputDialog.getText(parent, 'Password Required', dialog, QLineEdit.Normal, "")
 	if okPressed and password != '':
 		return password
