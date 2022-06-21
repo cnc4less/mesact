@@ -11640,7 +11640,7 @@ class Ui_mainWindow(object):
         self.toolBar.addAction(self.actionDocuments)
 
         self.retranslateUi(mainWindow)
-        self.mainTabs.setCurrentIndex(12)
+        self.mainTabs.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(0)
         self.tabWidget_3.setCurrentIndex(0)
         self.boardTW.setCurrentIndex(0)
@@ -11651,7 +11651,7 @@ class Ui_mainWindow(object):
         self.smartSerialSW.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(0)
         self.pinsSW.setCurrentIndex(0)
-        self.tabWidget_4.setCurrentIndex(1)
+        self.tabWidget_4.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(mainWindow)
 
     def retranslateUi(self, mainWindow):

@@ -45,7 +45,7 @@ QGroupBox::title {
 }</string>
       </property>
       <property name="currentIndex">
-       <number>12</number>
+       <number>0</number>
       </property>
       <property name="movable">
        <bool>false</bool>
@@ -27469,7 +27469,7 @@ TB2 PIN	SIGNAL	CAT5 PIN	CAT5 568B COLOR
         <item>
          <widget class="QTabWidget" name="tabWidget_4">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_19">
            <attribute name="title">
