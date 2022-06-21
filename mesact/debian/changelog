@@ -1,3 +1,9 @@
+mesact (0.6.4) unstable; urgency=medium
+
+  * Improve NIC test and Servo Thread test
+
+ -- John Thornton <jt@gnipsel.com>  Tue, 21 Jun 2022 07:19:34 -0500
+
 mesact (0.6.3) unstable; urgency=medium
 
   * Add Mesaflash PCI operations
