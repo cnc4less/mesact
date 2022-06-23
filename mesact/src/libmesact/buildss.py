@@ -188,27 +188,6 @@ def build(parent):
 		motherBoards = ['5i25', '7i80db', '7i80hd', '7i92', '7i93', '7i98']
 		daughterBoards =['7i76', '7i77', '7i78']
 
-		'''
-		if parent.board in motherBoards:
-			if parent.daughterCB_0.currentData():
-				card = parent.daughterCB_0.currentText()
-			elif parent.daughterCB_1.currentData():
-				card = parent.daughterCB_1.currentText()
-				if card in daughterBoards: # use input-00-not and output-00
-					hm2 =  f'hm2_{parent.board}.0.{card}.0.0.input-{i:02}{invert}\n'
-		if parent.board == '7i76e':
-			hm2 =  f'hm2_7i76e.0.7i76.0.0.input-{i:02}{invert}\n'
-		if parent.board == '7i95':
-			hm2 =  f'hm2_7i95.0.inmux.00.input-{i:02}{invert}\n'
-		if parent.board == '7i96':
-			invert = '_not' if getattr(parent, 'inputInvertCB_' + str(i)).isChecked() else ''
-			hm2 =  f'hm2_7i96.0.gpio.{i:03}.in{invert}\n'
-		if parent.board == '7i96s':
-			hm2 =  f'hm2_7i96s.0.inm.00.input-{i:02}{invert}{slow}\n'
-		if parent.board == '7i97':
-			hm2 =  f'hm2_7i97.0.inmux.00.input-{i:02}{invert}{slow}\n'
-		'''
-
 		combiBoards = ['7i76e', '7i95', '7i96', '7i96s', '7i97']
 		if ssCard != '7i73' and board in combiBoards:
 			for i in range(inputs):
@@ -237,54 +216,6 @@ def build(parent):
 				if getattr(parent, 'ss7i73out_' + str(i)).text() != 'Select':
 					outPin = getattr(parent, 'ss7i73out_' + str(i)).text()
 					contents.append(f'net ss7i73out_{i} hm2_{board}.0.7i84.0.0.output-{i:02} => {outPin}\n')
-
-
-		'''
-		elif parent.ssCardCB.currentText() == '7i69':
-			for i in range(24):
-				if getattr(parent, 'ss7i69in_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, 'ss7i69in_' + str(i)).text()
-					contents.append(f'net ss7i69in_{i} hm2_7i92.0.7i69.0.0.input-{i:02} <= {inPin}\n')
-			for i in range(24):
-				if getattr(parent, 'ss7i69out_' + str(i)).text() != 'Select':
-					outPin = getattr(parent, 'ss7i69out_' + str(i)).text()
-					contents.append(f'net ss7i69out_{i} hm2_7i92.0.7i69.0.0.output-{i:02} => {outPin}\n')
-
-		elif parent.ssCardCB.currentText() == '7i70':
-			for i in range(48):
-				if getattr(parent, 'ss7i70in_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, 'ss7i70in_' + str(i)).text()
-					contents.append(f'net ss7i70in_{i} hm2_7i92.0.7i70.0.0.input-{i:02} <= {inPin}\n')
-
-		elif parent.ssCardCB.currentText() == '7i71':
-			for i in range(48):
-				if getattr(parent, 'ss7i71out_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, 'ss7i71out_' + str(i)).text()
-					contents.append(f'net ss7i71out_{i} hm2_7i92.0.7i71.0.0.output-{i:02} <= {inPin}\n')
-
-		elif parent.ssCardCB.currentText() == '7i72':
-			for i in range(48):
-				if getattr(parent, 'ss7i72out_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, 'ss7i72out_' + str(i)).text()
-					contents.append(f'net ss7i72out_{i} hm2_7i92.0.7i72.0.0.output-{i:02} <= {inPin}\n')
-
-
-		elif parent.ssCardCB.currentText() == '7i84':
-			for i in range(32):
-				if getattr(parent, 'ss7i84in_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, 'ss7i84in_' + str(i)).text()
-					contents.append(f'net ss7i84in_{i} hm2_7i92.0.7i84.0.0.input-{i:02} <= {inPin}\n')
-			for i in range(16):
-				if getattr(parent, 'ss7i84out_' + str(i)).text() != 'Select':
-					outPin = getattr(parent, 'ss7i84out_' + str(i)).text()
-					contents.append(f'net ss7i84out_{i} hm2_7i92.0.7i84.0.0.output-{i:02} => {outPin}\n')
-
-		elif parent.ssCardCB.currentText() == '7i87':
-			for i in range(8):
-				if getattr(parent, 'ss7i87in_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, 'ss7i87in_' + str(i)).text()
-					contents.append(f'net ss7i87in_{i} hm2_7i92.0.7i87.0.0.input-{i:02} <= {inPin}\n')
-		'''
 
 		try:
 			with open(filePath, 'w') as f:
