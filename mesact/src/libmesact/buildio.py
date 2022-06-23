@@ -191,7 +191,7 @@ def build(parent):
 	'Spindle CW': 'net spindle-cw spindle.0.forward => ',
 	'Spindle CCW': 'net spindle-ccw spindle.0.reverse => ',
 	'Spindle Brake': 'net spindle-brake spindle.0.brake => ',
-	'E-Stop Out': 'net estop-loop ',
+	'E-Stop Out': 'net estop-loopback => ',
 	'Digital Out 0': 'net digital-out-0 motion.digital-out-00 => ',
 	'Digital Out 1': 'net digital-out-1 motion.digital-out-01 => ',
 	'Digital Out 2': 'net digital-out-2 motion.digital-out-02 => ',
@@ -203,6 +203,7 @@ def build(parent):
 		# hm2_7i92.0.7i77.0.0.output-15
 		key = getattr(parent, 'outputPB_' + str(i)).text()
 		if output_dict.get(key, False): # return False if key is not in dictionary
+			print(key)
 			if parent.board == '7i76e':
 				contents.append(output_dict[key] + f'hm2_7i76e.0.7i76.0.0.output-{i:02}\n')
 			if parent.board == '7i95': # hm2_7i95.0.ssr.00.out-00
@@ -217,9 +218,9 @@ def build(parent):
 					contents.append(output_dict[key] + f'hm2_7i96s.0.outm.00.out-{i:02}\n')
 			if parent.board == '7i97':
 				contents.append(output_dict[key] + f'hm2_7i97.0.ssr.00.out-{i:02}\n')
-		else: # handle special cases
-			if key == 'E Stop Out':
-				contents.append(f'net estop-loopin hm2_7i92.0.{card}.0.{port}.output-{i:02}\n')
+		#else: # handle special cases
+		#	if key == 'E Stop Out':
+		#		contents.append(f'net estop-loopin hm2_7i92.0.{card}.0.{port}.output-{i:02}\n')
 
 	try:
 		with open(filePath, 'w') as f:
