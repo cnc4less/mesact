@@ -217,9 +217,6 @@ def build(parent):
 					contents.append(output_dict[key] + f'hm2_7i96s.0.outm.00.out-{i:02}\n')
 			if parent.board == '7i97':
 				contents.append(output_dict[key] + f'hm2_7i97.0.ssr.00.out-{i:02}\n')
-		#else: # handle special cases
-		#	if key == 'E Stop Out':
-		#		contents.append(f'net estop-loopin hm2_7i92.0.{card}.0.{port}.output-{i:02}\n')
 
 	try:
 		with open(filePath, 'w') as f:
