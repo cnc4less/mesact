@@ -628,7 +628,6 @@ def boardChanged(parent):
 
 		# 6 axes of analog servo 16 isolated inputs 6 isolated outputs
 		elif parent.boardCB.currentData() == '7i97':
-			print('here')
 			parent.boardType = 'eth'
 			parent.cardType_0 = 'servo'
 			parent.axes = 6
