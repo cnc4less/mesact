@@ -6,6 +6,7 @@ from libmesact import utilities
 
 def boardChanged(parent):
 	if parent.boardCB.currentData():
+		#print(parent.boardCB.currentData())
 		parent.machinePTE.clear()
 		parent.daughterCB_0.clear()
 		parent.daughterCB_1.clear()
@@ -627,6 +628,7 @@ def boardChanged(parent):
 
 		# 6 axes of analog servo 16 isolated inputs 6 isolated outputs
 		elif parent.boardCB.currentData() == '7i97':
+			print('here')
 			parent.boardType = 'eth'
 			parent.cardType_0 = 'servo'
 			parent.axes = 6
@@ -703,6 +705,7 @@ def boardChanged(parent):
 			parent.encodersCB.addItem('N/A', False)
 
 	else: # No Board Selected
+		print('oops')
 		parent.board = ''
 		parent.boardType = ''
 		parent.ipAddressCB.setEnabled(False)

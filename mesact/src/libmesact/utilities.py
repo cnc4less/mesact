@@ -131,12 +131,17 @@ def firmwareChanged(parent):
 		parent.machinePTE.clear()
 
 def daughterCardChanged(parent):
+	# if it's an all in one board don't turn off the tabs
 	if not parent.sender().currentData():
 		parent.daughterCB_0.setEnabled(True)
 		parent.daughterCB_1.setEnabled(True)
 		parent.mainTabs.setTabEnabled(3, False)
 		parent.mainTabs.setTabEnabled(4, False)
 		return
+
+	combiBoards = ['7i76e', '7i95', '7i96', '7i96s', '7i97']
+	if parent.boardCB.currentData() in combiBoards:
+		print(parent.boardCB.currentData())
 
 	#motherBoards = ['5i25', '7i80db', '7i80hd', '7i92', '7i93', '7i98']
 	axes = {'7i33': 4, '7i47': 6, '7i76': 5, '7i77': 6, '7i78': 4, '5ABOB': 5}
