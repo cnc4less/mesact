@@ -46,7 +46,7 @@ class VersionError(QMainWindow):
 		msgBox = QMessageBox()
 		msgBox.setIcon(QMessageBox.Warning)
 		msgBox.setWindowTitle('Version Error')
-		msgBox.setText(f'Python 3.6 or newer is required.\nYour Python is {sys.version[0:3]}')
+		msgBox.setText(f'Python 3.6 or newer is required.\nYour Python is {sys.version_info[0]}.{sys.version_info[1]}')
 		msgBox.setStandardButtons(QMessageBox.Ok)
 		msgBox.exec()
 		sys.exit()
