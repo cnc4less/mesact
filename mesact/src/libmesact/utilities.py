@@ -131,25 +131,63 @@ def firmwareChanged(parent):
 		parent.machinePTE.clear()
 
 def daughterCardChanged(parent):
-	# if it's an all in one board don't turn off the tabs
-	if not parent.sender().currentData():
-		parent.daughterCB_0.setEnabled(True)
-		parent.daughterCB_1.setEnabled(True)
-		parent.mainTabs.setTabEnabled(3, False)
-		parent.mainTabs.setTabEnabled(4, False)
-		return
-
 	combiBoards = ['7i76e', '7i95', '7i96', '7i96s', '7i97']
-	if parent.boardCB.currentData() in combiBoards:
-		print(parent.boardCB.currentData())
-
-	#motherBoards = ['5i25', '7i80db', '7i80hd', '7i92', '7i93', '7i98']
-	axes = {'7i33': 4, '7i47': 6, '7i76': 5, '7i77': 6, '7i78': 4, '5ABOB': 5}
+	axes = {'7i33': 4, '7i47': 6, '7i76': 5, '7i77': 6, '7i78': 4, '7i85': 5, '7i85s': 5, '5ABOB': 5}
 	inputs = {'7i76': '32', '7i77': '32', '7i78': '0', '5ABOB': '5'}
 	outputs = {'7i76': '16', '7i77': '16', '7i78': '0', '5ABOB': '1'}
 	stepper = ['7i76', '7i78']
 	servo = ['7i77']
 	cardType = {'7i33': 'servo', '7i47': 'step', '7i76': 'step', '7i77': 'servo', '7i78': 'step', '5ABOB': 'step'}
+
+	# if it's an all in one board don't turn off the tabs
+	# if it's an all in one board and a daughter card is selected it's on C1
+	if parent.boardCB.currentData() in combiBoards:
+		if parent.sender().currentData():
+			parent.cardTabs.setTabText(1, parent.sender().currentData())
+			parent.cardTabs.setTabEnabled(1, True)
+			if axes[parent.sender().currentData()] == 6:
+				parent.jointTabs_1.setTabEnabled(4, True)
+				parent.jointTabs_1.setTabEnabled(5, True)
+			elif axes[parent.sender().currentData()] == 5:
+				parent.jointTabs_1.setTabEnabled(4, True)
+				parent.jointTabs_1.setTabEnabled(5, False)
+			elif axes[parent.sender().currentData()] == 4:
+				parent.jointTabs_1.setTabEnabled(4, False)
+				parent.jointTabs_1.setTabEnabled(5, False)
+			if parent.sender().currentData(): # a daughter card is selected
+				if cardType[parent.sender().currentData()] == 'step':
+					for i in range(5):
+						getattr(parent, f'c1_stepgenGB_{i}').setVisible(True)
+						getattr(parent, f'c1_analogGB_{i}').setVisible(False)
+						getattr(parent, f'c1_encoderGB_{i}').setVisible(False)
+				elif cardType[parent.sender().currentData()] == 'servo':
+					for i in range(5):
+						getattr(parent, f'c1_stepgenGB_{i}').setVisible(False)
+						getattr(parent, f'c1_analogGB_{i}').setVisible(True)
+						getattr(parent, f'c1_encoderGB_{i}').setVisible(True)
+
+	else:
+		if not parent.sender().currentData():
+			parent.daughterCB_0.setEnabled(True)
+			parent.daughterCB_1.setEnabled(True)
+			parent.mainTabs.setTabEnabled(3, False)
+			parent.mainTabs.setTabEnabled(4, False)
+			return
+
+		if axes[parent.sender().currentData()] == 6:
+			parent.jointTabs_0.setTabEnabled(4, True)
+			parent.jointTabs_0.setTabEnabled(5, True)
+		elif axes[parent.sender().currentData()] == 5:
+			parent.jointTabs_0.setTabEnabled(4, True)
+			parent.jointTabs_0.setTabEnabled(5, False)
+		elif axes[parent.sender().currentData()] == 4:
+			parent.jointTabs_0.setTabEnabled(4, False)
+			parent.jointTabs_0.setTabEnabled(5, False)
+
+
+	'''
+
+	#motherBoards = ['5i25', '7i80db', '7i80hd', '7i92', '7i93', '7i98']
 
 	if parent.sender().currentData() == '7i76':
 		spinnotes = ('SPINDLE INTERFACE\n'
@@ -195,15 +233,6 @@ def daughterCardChanged(parent):
 	parent.cardTabs.setTabText(0, parent.sender().currentData())
 	parent.cardType_0 = cardType[parent.sender().currentData()]
 
-	if axes[parent.sender().currentData()] == 6:
-		parent.jointTabs_0.setTabEnabled(4, True)
-		parent.jointTabs_0.setTabEnabled(5, True)
-	elif axes[parent.sender().currentData()] == 5:
-		parent.jointTabs_0.setTabEnabled(4, True)
-		parent.jointTabs_0.setTabEnabled(5, False)
-	elif axes[parent.sender().currentData()] == 4:
-		parent.jointTabs_0.setTabEnabled(4, False)
-		parent.jointTabs_0.setTabEnabled(5, False)
 
 	if parent.daughterCB_0.currentData():
 		if cardType[parent.daughterCB_0.currentData()] == 'step':
@@ -243,6 +272,7 @@ def daughterCardChanged(parent):
 			getattr(parent, f'outputPB_{i}').setEnabled(True)
 		for i in range(int(outputs[parent.sender().currentData()]),16):
 			getattr(parent, f'outputPB_{i}').setEnabled(False)
+	'''
 
 def connectorChanged(parent):
 	if parent.connectorCB.currentText() == 'P1':
