@@ -1327,6 +1327,23 @@ PIN file format</string>
             </item>
            </layout>
           </widget>
+          <widget class="QWidget" name="tab_31">
+           <attribute name="title">
+            <string>7i85S</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_195">
+            <item row="0" column="0">
+             <widget class="QLabel" name="card7i85sLB">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
           <widget class="QWidget" name="tab_18">
            <attribute name="title">
             <string>7i88</string>
