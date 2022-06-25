@@ -62,9 +62,10 @@ def clearProgressBar(parent):
 	parent.machinePTE.appendPlainText('Close the Configuration Tool and reinstall')
 
 def showDocs(parent, pdfDoc):
-	if isinstance(pdfDoc, QComboBox):
-		docPath = os.path.join(parent.docs_path, pdfDoc.currentData())
-	else:
-		docPath = os.path.join(parent.docs_path, pdfDoc)
-	subprocess.call(('xdg-open', docPath))
+	if pdfDoc.currentData():
+		if isinstance(pdfDoc, QComboBox):
+			docPath = os.path.join(parent.docs_path, pdfDoc.currentData())
+		else:
+			docPath = os.path.join(parent.docs_path, pdfDoc)
+		subprocess.call(('xdg-open', docPath))
 
