@@ -385,7 +385,7 @@ def pidSetDefault(parent):
 		getattr(parent, 'ff1_s').setValue(0)
 		getattr(parent, 'ff2_s').setValue(0)
 		getattr(parent, 'bias_s').setValue(0)
-		getattr(parent, 'maxOutput_s').setValue(0)
+		getattr(parent, 'maxOutput_s').setValue(parent.spindleMaxRpm.value())
 		getattr(parent, 'maxError_s').setValue(0)
 		getattr(parent, 'deadband_s').setValue(0)
 		return
@@ -489,6 +489,7 @@ def spindleChanged(parent):
 	else:
 		if parent.spindleTypeCB.currentData() == 'analog':
 			parent.spindleGB.setEnabled(True)
+			parent.spindlepidGB.setEnabled(True)
 			parent.spindleStepgenGB.setEnabled(False)
 			for i in range(parent.axes):
 				parent.jointTabs_0.setTabEnabled(i, True)
