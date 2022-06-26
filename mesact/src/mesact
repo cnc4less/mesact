@@ -118,7 +118,6 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.linearUnitsCB.currentIndexChanged.connect(partial(utilities.unitsChanged, self))
 		self.trajMaxLinVelDSB.valueChanged.connect(partial(utilities.maxVelChanged, self))
 		self.boardCB.currentIndexChanged.connect(partial(boards.boardChanged, self))
-		self.firmwareCB.currentIndexChanged.connect(partial(utilities.firmwareChanged, self))
 		for i in range(2):
 			getattr(self, f'daughterCB_{i}').currentIndexChanged.connect(partial(utilities.daughterCardChanged, self))
 
@@ -126,6 +125,7 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.checkBoardPB.clicked.connect(partial(card.checkCard, self))
 
 		# Firmware Group
+		self.firmwareCB.currentIndexChanged.connect(partial(utilities.firmwareChanged, self))
 		self.readpdPB.clicked.connect(partial(card.readpd, self))
 		self.readhmidPB.clicked.connect(partial(card.readhmid, self))
 		self.flashPB.clicked.connect(partial(card.flashCard, self))
@@ -167,6 +167,8 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.card7i78LB.setPixmap(pixmap)
 		pixmap = QPixmap(os.path.join(self.image_path, '7i85-card.png'))
 		self.card7i85LB.setPixmap(pixmap)
+		pixmap = QPixmap(os.path.join(self.image_path, '7i85s-card.png'))
+		self.card7i85sLB.setPixmap(pixmap)
 		pixmap = QPixmap(os.path.join(self.image_path, '7i88-card.png'))
 		self.card7i88LB.setPixmap(pixmap)
 
