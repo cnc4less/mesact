@@ -99,6 +99,7 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		startup.checkconfig(self)
 
 	def setupConnections(self):
+		# Machine Tab
 		# Menu Items
 		self.actionEnglish.triggered.connect(partial(self.change_language, None))
 		self.actionGerman.triggered.connect(partial(self.change_language, 'eng-de'))
@@ -133,7 +134,15 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.verifyPB.clicked.connect(partial(card.verifyCard, self))
 		self.copyPB.clicked.connect(partial(utilities.copyOutput, self))
 
-		# Axes Tabs
+		# Display Tab
+		self.minLinJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
+		self.defLinJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
+		self.maxLinJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
+		self.minAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
+		self.defAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
+		self.maxAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
+
+		# Axes Tab
 		for i in range(6):
 			for j in range(2):
 				getattr(self, f'c{j}_axisCB_{i}').currentIndexChanged.connect(partial(utilities.axisChanged, self))
@@ -177,14 +186,6 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.OpenManPB_2.clicked.connect(partial(updates.showDocs, self, self.dauCardDocsCB))
 		self.OpenManPB_3.clicked.connect(partial(updates.showDocs, self, self.ssCardDocsCB))
 		self.OpenManPB_4.clicked.connect(partial(updates.showDocs, self, self.otherDocsCB))
-
-		# Display Tab
-		self.minLinJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
-		self.defLinJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
-		self.maxLinJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
-		self.minAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
-		self.defAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
-		self.maxAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
 
 		# Spindle Tab
 		self.pidDefault_s.clicked.connect(partial(utilities.pidSetDefault, self))
