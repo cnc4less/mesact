@@ -22,11 +22,10 @@ def openini(parent, configName = ''):
 		base = os.path.basename(iniFile)
 		configName = os.path.splitext(base)[0]
 	else: # we passed a file name
+		configName = configName.replace(' ','_').lower()
+		print(configName)
 		configsDir = os.path.expanduser('~/linuxcnc/configs')
 		iniFile = os.path.join(configsDir, configName, configName + '.ini')
-		#setName = f'.{configName}'
-		#settingsFile = os.path.join(configsDir, configName, setName + '.cfg')
-		#print(settingsFile)
 		if not os.path.isfile(iniFile):
 			msg = f'Create and Save the Default File\n{iniFile}'
 			parent.errorMsgOk(msg, 'Not Found')
