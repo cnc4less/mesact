@@ -3,146 +3,146 @@
 <context>
     <name>mainWindow</name>
     <message>
-        <location filename="ui_mesact.py" line="11674"/>
+        <location filename="ui_mesact.py" line="11695"/>
         <source>Main Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11719"/>
+        <location filename="ui_mesact.py" line="11740"/>
         <source>Machine</source>
         <translation>Maschine</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11679"/>
+        <location filename="ui_mesact.py" line="11700"/>
         <source>File Path</source>
         <translation>Dateipfad</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11681"/>
+        <location filename="ui_mesact.py" line="11702"/>
         <source>Linear Units</source>
         <translation>Lineare Einheiten</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11680"/>
+        <location filename="ui_mesact.py" line="11701"/>
         <source>Max Linear Velocity</source>
         <translation>Max. Lineargeschwindigkeit</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11683"/>
+        <location filename="ui_mesact.py" line="11704"/>
         <source>Configuration Name</source>
         <translation>Konfigurationsname</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11682"/>
+        <location filename="ui_mesact.py" line="11703"/>
         <source>Coordinates</source>
         <translation>Koordinaten</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11684"/>
+        <location filename="ui_mesact.py" line="11705"/>
         <source>Any combination of letters and digits
 including the dash and underscore.
 Spaces are replaced with underscore.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11718"/>
+        <location filename="ui_mesact.py" line="11739"/>
         <source>Press F1 for help on current tab</source>
         <translation>F1 für Hilfe des aktuellen Tabs</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11688"/>
+        <location filename="ui_mesact.py" line="11709"/>
         <source>Configuration Setup</source>
         <translation>Konfigurationseinstellung</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11832"/>
+        <location filename="ui_mesact.py" line="11853"/>
         <source>Board</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11690"/>
+        <location filename="ui_mesact.py" line="11711"/>
         <source>Daughter Card</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11691"/>
+        <location filename="ui_mesact.py" line="11712"/>
         <source>IP Address</source>
         <translation>IP-Adresse</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11697"/>
+        <location filename="ui_mesact.py" line="11718"/>
         <source>PWM Generators</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11696"/>
+        <location filename="ui_mesact.py" line="11717"/>
         <source>Step Generators</source>
         <translation>Schrittgeneratoren</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11922"/>
+        <location filename="ui_mesact.py" line="11943"/>
         <source>Encoders</source>
         <translation>Encoder</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13914"/>
+        <location filename="ui_mesact.py" line="13935"/>
         <source>Options</source>
         <translation>Optionen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11700"/>
+        <location filename="ui_mesact.py" line="11721"/>
         <source> Firmware</source>
         <translation> Firmware</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11717"/>
+        <location filename="ui_mesact.py" line="11738"/>
         <source>Read HMID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11701"/>
+        <location filename="ui_mesact.py" line="11722"/>
         <source>Reload Firmware after Flashing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11702"/>
+        <location filename="ui_mesact.py" line="11723"/>
         <source>Reload</source>
         <translation>Neu laden</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11712"/>
+        <location filename="ui_mesact.py" line="11733"/>
         <source>Copy the Output
 to the clipboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14145"/>
+        <location filename="ui_mesact.py" line="14166"/>
         <source>Copy</source>
         <translation>Kopieren</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11703"/>
+        <location filename="ui_mesact.py" line="11724"/>
         <source>Read Pin Descriptions
 from board</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11705"/>
+        <location filename="ui_mesact.py" line="11726"/>
         <source>Read PD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11708"/>
+        <location filename="ui_mesact.py" line="11729"/>
         <source>Flash</source>
         <translation>Flash</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11711"/>
+        <location filename="ui_mesact.py" line="11732"/>
         <source>Verify</source>
         <translation>Überprüfen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11675"/>
+        <location filename="ui_mesact.py" line="11696"/>
         <source>Backups</source>
         <translation>Backups</translation>
     </message>
@@ -152,112 +152,112 @@ from board</source>
         <translation type="obsolete">Aktiviere Backups</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11986"/>
+        <location filename="ui_mesact.py" line="12007"/>
         <source>Card</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11721"/>
+        <location filename="ui_mesact.py" line="11742"/>
         <source>Schematic 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11722"/>
+        <location filename="ui_mesact.py" line="11743"/>
         <source>Schematic 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11767"/>
+        <location filename="ui_mesact.py" line="11788"/>
         <source>7i33TA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11768"/>
+        <location filename="ui_mesact.py" line="11789"/>
         <source>7i37TA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11769"/>
+        <location filename="ui_mesact.py" line="11790"/>
         <source>7i47</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11949"/>
+        <location filename="ui_mesact.py" line="11970"/>
         <source>7i48</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11972"/>
+        <location filename="ui_mesact.py" line="11993"/>
         <source>7i76</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11906"/>
+        <location filename="ui_mesact.py" line="11927"/>
         <source>7i77</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11777"/>
+        <location filename="ui_mesact.py" line="11798"/>
         <source>7i85</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11985"/>
+        <location filename="ui_mesact.py" line="12006"/>
         <source>7i88</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12002"/>
+        <location filename="ui_mesact.py" line="12023"/>
         <source>Info</source>
         <translation>Info</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12003"/>
+        <location filename="ui_mesact.py" line="12024"/>
         <source>Axis Display Options</source>
         <translation>Axis Anzeigeoptionen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12004"/>
+        <location filename="ui_mesact.py" line="12025"/>
         <source>Front Tool Lathe</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12005"/>
+        <location filename="ui_mesact.py" line="12026"/>
         <source>Back Tool Lathe</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12020"/>
+        <location filename="ui_mesact.py" line="12041"/>
         <source>Display</source>
         <translation>Anzeige</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12007"/>
+        <location filename="ui_mesact.py" line="12028"/>
         <source>GUI</source>
         <translation>GUI</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12008"/>
+        <location filename="ui_mesact.py" line="12029"/>
         <source>Position Offset</source>
         <translation>Position Offset</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12009"/>
+        <location filename="ui_mesact.py" line="12030"/>
         <source>Position Feedback</source>
         <translation>Position Rückkopplung</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12010"/>
+        <location filename="ui_mesact.py" line="12031"/>
         <source>Maximum Feed Override</source>
         <translation>Max. Vorschubübersteuerung</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12011"/>
+        <location filename="ui_mesact.py" line="12032"/>
         <source>1.0 = 100%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12012"/>
+        <location filename="ui_mesact.py" line="12033"/>
         <source>G code Editor</source>
         <translation>G-Code Editor</translation>
     </message>
@@ -272,488 +272,488 @@ from board</source>
         <translation type="obsolete">Standard-Schrittgeschwindigkeit</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13060"/>
+        <location filename="ui_mesact.py" line="13081"/>
         <source>PID Settings</source>
         <translation>PID-Einstellungen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13065"/>
+        <location filename="ui_mesact.py" line="13086"/>
         <source>FF1</source>
         <translation>FF1</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13068"/>
+        <location filename="ui_mesact.py" line="13089"/>
         <source>Bias</source>
         <translation>Bias</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13061"/>
+        <location filename="ui_mesact.py" line="13082"/>
         <source>FF0</source>
         <translation>FF0</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13067"/>
+        <location filename="ui_mesact.py" line="13088"/>
         <source>P</source>
         <translation>P</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13066"/>
+        <location filename="ui_mesact.py" line="13087"/>
         <source>I</source>
         <translation>I</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13062"/>
+        <location filename="ui_mesact.py" line="13083"/>
         <source>D</source>
         <translation>D</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13069"/>
+        <location filename="ui_mesact.py" line="13090"/>
         <source>Default Values</source>
         <translation>Standardwerte</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13070"/>
+        <location filename="ui_mesact.py" line="13091"/>
         <source>Deadband</source>
         <translation>Totzone</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13071"/>
+        <location filename="ui_mesact.py" line="13092"/>
         <source>Max Output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13063"/>
+        <location filename="ui_mesact.py" line="13084"/>
         <source>FF2</source>
         <translation>FF2</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13064"/>
+        <location filename="ui_mesact.py" line="13085"/>
         <source>Max Error</source>
         <translation>Max. Fehler</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12843"/>
+        <location filename="ui_mesact.py" line="12864"/>
         <source>Homing</source>
         <translation>Referenzfahrt</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12844"/>
+        <location filename="ui_mesact.py" line="12865"/>
         <source>Home Offset</source>
         <translation>Nullpunkt</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12845"/>
+        <location filename="ui_mesact.py" line="12866"/>
         <source>Home Sequence</source>
         <translation>Referenzfahrt Sequenz</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12846"/>
+        <location filename="ui_mesact.py" line="12867"/>
         <source>Home Search Velocity</source>
         <translation>Geschwindigkeit Referenzfahrt anfahren</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12847"/>
+        <location filename="ui_mesact.py" line="12868"/>
         <source>Home Offset can be used to back
 off of the home switch</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12849"/>
+        <location filename="ui_mesact.py" line="12870"/>
         <source>Home Ignore Limits</source>
         <translation>Endschalter bei Referenzfahrt ignorieren</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12850"/>
+        <location filename="ui_mesact.py" line="12871"/>
         <source>Home Latch Velocity</source>
         <translation>Geschwindigkeit Referenzfahrt wegfahren</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12851"/>
+        <location filename="ui_mesact.py" line="12872"/>
         <source>Home sequences start at 0 and do not skip a number.
 Multiple joint axis use a negative number.
 Leave blank to home the joint manually.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12854"/>
+        <location filename="ui_mesact.py" line="12875"/>
         <source>Home Switch is Shared</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12855"/>
+        <location filename="ui_mesact.py" line="12876"/>
         <source>Latch Velocity is in user units per second
 usually set slower than Search Velocity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12857"/>
+        <location filename="ui_mesact.py" line="12878"/>
         <source>Home Use Index</source>
         <translation>Index für Referenzfahrt nutzen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12858"/>
+        <location filename="ui_mesact.py" line="12879"/>
         <source>Home</source>
         <translation>Pos1</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12427"/>
+        <location filename="ui_mesact.py" line="12448"/>
         <source>Home is usually set to 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12861"/>
+        <location filename="ui_mesact.py" line="12882"/>
         <source>Search Velocity is in units per second</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12862"/>
+        <location filename="ui_mesact.py" line="12883"/>
         <source>Home Final Velocity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12863"/>
+        <location filename="ui_mesact.py" line="12884"/>
         <source>Analog Output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12867"/>
+        <location filename="ui_mesact.py" line="12888"/>
         <source>Analog Max Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12865"/>
+        <location filename="ui_mesact.py" line="12886"/>
         <source>Analog Scale Max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12866"/>
+        <location filename="ui_mesact.py" line="12887"/>
         <source>Analog Min Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12886"/>
+        <location filename="ui_mesact.py" line="12907"/>
         <source>Encoder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13072"/>
+        <location filename="ui_mesact.py" line="13093"/>
         <source>Encoder Scale</source>
         <translation type="unfinished">Encoder-Einstellungen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13084"/>
+        <location filename="ui_mesact.py" line="13105"/>
         <source>StepGen Settings</source>
         <translation>StepGen Einstellungen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13092"/>
+        <location filename="ui_mesact.py" line="13113"/>
         <source>Step Time</source>
         <translation>Schritt Zeit</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13091"/>
+        <location filename="ui_mesact.py" line="13112"/>
         <source>ns</source>
         <translation>ns</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13087"/>
+        <location filename="ui_mesact.py" line="13108"/>
         <source>Step Space</source>
         <translation>Schritt Pause</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13085"/>
+        <location filename="ui_mesact.py" line="13106"/>
         <source>Direction Setup</source>
         <translation>Zeit zwischen Richtungswechsel und Schritt</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13094"/>
+        <location filename="ui_mesact.py" line="13115"/>
         <source>Direction Hold</source>
         <translation>Zeit zwischen Schritt und Richtungswechsel</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12879"/>
+        <location filename="ui_mesact.py" line="12900"/>
         <source>Joint Information</source>
         <translation>Gelenk-Informationen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12824"/>
+        <location filename="ui_mesact.py" line="12845"/>
         <source>Axis</source>
         <translation>Achse</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12822"/>
+        <location filename="ui_mesact.py" line="12843"/>
         <source>Reverse Dir</source>
         <translation>Umgekehrte Richtung</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13095"/>
+        <location filename="ui_mesact.py" line="13116"/>
         <source>Scale</source>
         <translation>Skala</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12825"/>
+        <location filename="ui_mesact.py" line="12846"/>
         <source>Axis Type</source>
         <translation>Achsentyp</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12826"/>
+        <location filename="ui_mesact.py" line="12847"/>
         <source>Minimum
 Limit</source>
         <translation>Endschalter
 Minimum</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12828"/>
+        <location filename="ui_mesact.py" line="12849"/>
         <source>Maximum Limit</source>
         <translation>Endschalter Maximum</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12829"/>
+        <location filename="ui_mesact.py" line="12850"/>
         <source>Maximum Velocity</source>
         <translation>Maximale Geschwindigkeit</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12830"/>
+        <location filename="ui_mesact.py" line="12851"/>
         <source>Maximum Acceleration</source>
         <translation>Maximale Beschleunigung</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12532"/>
+        <location filename="ui_mesact.py" line="12553"/>
         <source>Joint 0</source>
         <translation>Gelenk 0</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12604"/>
+        <location filename="ui_mesact.py" line="12625"/>
         <source>Joint 1</source>
         <translation>Gelenk 1</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12676"/>
+        <location filename="ui_mesact.py" line="12697"/>
         <source>Joint 2</source>
         <translation>Gelenk 2</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12748"/>
+        <location filename="ui_mesact.py" line="12769"/>
         <source>Joint 3</source>
         <translation>Gelenk 3</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12820"/>
+        <location filename="ui_mesact.py" line="12841"/>
         <source>Joint 4</source>
         <translation>Gelenk 4</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12892"/>
+        <location filename="ui_mesact.py" line="12913"/>
         <source>Joint 5</source>
         <translation>Gelenk 5</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12460"/>
+        <location filename="ui_mesact.py" line="12481"/>
         <source>Card 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12893"/>
+        <location filename="ui_mesact.py" line="12914"/>
         <source>Card 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12895"/>
+        <location filename="ui_mesact.py" line="12916"/>
         <source>Outputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13845"/>
+        <location filename="ui_mesact.py" line="13866"/>
         <source>Select</source>
         <translation>Auswählen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13848"/>
+        <location filename="ui_mesact.py" line="13869"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13863"/>
+        <location filename="ui_mesact.py" line="13884"/>
         <source>14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13833"/>
+        <location filename="ui_mesact.py" line="13854"/>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13851"/>
+        <location filename="ui_mesact.py" line="13872"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13854"/>
+        <location filename="ui_mesact.py" line="13875"/>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13852"/>
+        <location filename="ui_mesact.py" line="13873"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13853"/>
+        <location filename="ui_mesact.py" line="13874"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13855"/>
+        <location filename="ui_mesact.py" line="13876"/>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13856"/>
+        <location filename="ui_mesact.py" line="13877"/>
         <source>7</source>
         <translation>7</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13857"/>
+        <location filename="ui_mesact.py" line="13878"/>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13858"/>
+        <location filename="ui_mesact.py" line="13879"/>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13980"/>
+        <location filename="ui_mesact.py" line="14001"/>
         <source>10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13860"/>
+        <location filename="ui_mesact.py" line="13881"/>
         <source>11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13861"/>
+        <location filename="ui_mesact.py" line="13882"/>
         <source>12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13862"/>
+        <location filename="ui_mesact.py" line="13883"/>
         <source>13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13955"/>
+        <location filename="ui_mesact.py" line="13976"/>
         <source>15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13038"/>
+        <location filename="ui_mesact.py" line="13059"/>
         <source>Invert</source>
         <translation>Invertieren</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13865"/>
+        <location filename="ui_mesact.py" line="13886"/>
         <source>16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13801"/>
+        <location filename="ui_mesact.py" line="13822"/>
         <source>18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13866"/>
+        <location filename="ui_mesact.py" line="13887"/>
         <source>17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13802"/>
+        <location filename="ui_mesact.py" line="13823"/>
         <source>19</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13962"/>
+        <location filename="ui_mesact.py" line="13983"/>
         <source>20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13799"/>
+        <location filename="ui_mesact.py" line="13820"/>
         <source>21</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13804"/>
+        <location filename="ui_mesact.py" line="13825"/>
         <source>22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13810"/>
+        <location filename="ui_mesact.py" line="13831"/>
         <source>23</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13797"/>
+        <location filename="ui_mesact.py" line="13818"/>
         <source>24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13811"/>
+        <location filename="ui_mesact.py" line="13832"/>
         <source>25</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13809"/>
+        <location filename="ui_mesact.py" line="13830"/>
         <source>26</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13805"/>
+        <location filename="ui_mesact.py" line="13826"/>
         <source>27</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13798"/>
+        <location filename="ui_mesact.py" line="13819"/>
         <source>28</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13796"/>
+        <location filename="ui_mesact.py" line="13817"/>
         <source>29</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13800"/>
+        <location filename="ui_mesact.py" line="13821"/>
         <source>30</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13808"/>
+        <location filename="ui_mesact.py" line="13829"/>
         <source>31</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13058"/>
+        <location filename="ui_mesact.py" line="13079"/>
         <source>I/O</source>
         <translation>I/O</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13101"/>
+        <location filename="ui_mesact.py" line="13122"/>
         <source>Smart Serial Card</source>
         <translation>Smart Serial Karte</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13102"/>
+        <location filename="ui_mesact.py" line="13123"/>
         <source>Build sserial.hal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13103"/>
+        <location filename="ui_mesact.py" line="13124"/>
         <source>No Smart Serial Card Selected</source>
         <translation>Keine Smart Serial Karte ausgewählt</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13104"/>
+        <location filename="ui_mesact.py" line="13125"/>
         <source>The Smart Serial Card Configuration is very new.
 
 At this time the Smart Serial Card
@@ -772,7 +772,7 @@ Die 7i83 und 7i87 werden derzeit nicht unterstützt.
 Die Konfiguration der Smart Serial Karte wird zurzeit nicht aus der ini-Datei geladen.</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13112"/>
+        <location filename="ui_mesact.py" line="13133"/>
         <source>SSERIAL Wiring using a standard CAT5 Cable
 Pin 0 is at the bottom
 TB2 PIN    SIGNAL    CAT5 PIN    CAT5 568B COLOR
@@ -785,507 +785,507 @@ TB2 PIN    SIGNAL    CAT5 PIN    CAT5 568B COLOR
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13121"/>
+        <location filename="ui_mesact.py" line="13142"/>
         <source>7i64</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13122"/>
+        <location filename="ui_mesact.py" line="13143"/>
         <source>Ouputs 12 - 23 P5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13147"/>
+        <location filename="ui_mesact.py" line="13168"/>
         <source>Inputs 12 - 23 P4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13172"/>
+        <location filename="ui_mesact.py" line="13193"/>
         <source>Inputs 0 - 11 P3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13197"/>
+        <location filename="ui_mesact.py" line="13218"/>
         <source>Outputs 0 - 11 P2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13222"/>
+        <location filename="ui_mesact.py" line="13243"/>
         <source>7i69</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13324"/>
+        <location filename="ui_mesact.py" line="13345"/>
         <source>Inputs 0 - 11 P2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13349"/>
+        <location filename="ui_mesact.py" line="13370"/>
         <source>Inputs 12 - 23 P2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13273"/>
+        <location filename="ui_mesact.py" line="13294"/>
         <source>Ouputs 12 - 23 P3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13298"/>
+        <location filename="ui_mesact.py" line="13319"/>
         <source>Outputs 0 - 11 P3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13323"/>
+        <location filename="ui_mesact.py" line="13344"/>
         <source>7i70</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13374"/>
+        <location filename="ui_mesact.py" line="13395"/>
         <source>Inputs 36 - 47 P3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13587"/>
+        <location filename="ui_mesact.py" line="13608"/>
         <source>46</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13577"/>
+        <location filename="ui_mesact.py" line="13598"/>
         <source>41</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13588"/>
+        <location filename="ui_mesact.py" line="13609"/>
         <source>38</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13583"/>
+        <location filename="ui_mesact.py" line="13604"/>
         <source>42</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13581"/>
+        <location filename="ui_mesact.py" line="13602"/>
         <source>43</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13578"/>
+        <location filename="ui_mesact.py" line="13599"/>
         <source>45</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13579"/>
+        <location filename="ui_mesact.py" line="13600"/>
         <source>44</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13580"/>
+        <location filename="ui_mesact.py" line="13601"/>
         <source>37</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13586"/>
+        <location filename="ui_mesact.py" line="13607"/>
         <source>47</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13585"/>
+        <location filename="ui_mesact.py" line="13606"/>
         <source>36</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13582"/>
+        <location filename="ui_mesact.py" line="13603"/>
         <source>40</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13584"/>
+        <location filename="ui_mesact.py" line="13605"/>
         <source>39</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13399"/>
+        <location filename="ui_mesact.py" line="13420"/>
         <source>Inputs 24 - 35 P3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13606"/>
+        <location filename="ui_mesact.py" line="13627"/>
         <source>33</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13603"/>
+        <location filename="ui_mesact.py" line="13624"/>
         <source>32</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13602"/>
+        <location filename="ui_mesact.py" line="13623"/>
         <source>35</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13611"/>
+        <location filename="ui_mesact.py" line="13632"/>
         <source>34</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13424"/>
+        <location filename="ui_mesact.py" line="13445"/>
         <source>7i71</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13551"/>
+        <location filename="ui_mesact.py" line="13572"/>
         <source>Outputs 12 - 23 TB3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13576"/>
+        <location filename="ui_mesact.py" line="13597"/>
         <source>Outputs 36 - 47 TB2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13601"/>
+        <location filename="ui_mesact.py" line="13622"/>
         <source>Outputs 24 - 35 TB2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13526"/>
+        <location filename="ui_mesact.py" line="13547"/>
         <source>Outputs 0 - 11 TB3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13525"/>
+        <location filename="ui_mesact.py" line="13546"/>
         <source>7i72</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13626"/>
+        <location filename="ui_mesact.py" line="13647"/>
         <source>7i73</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13627"/>
+        <location filename="ui_mesact.py" line="13648"/>
         <source>Jumpers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13628"/>
+        <location filename="ui_mesact.py" line="13649"/>
         <source>KeyPad</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13629"/>
+        <location filename="ui_mesact.py" line="13650"/>
         <source>W5 Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13630"/>
+        <location filename="ui_mesact.py" line="13651"/>
         <source>W6 Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13631"/>
+        <location filename="ui_mesact.py" line="13652"/>
         <source>LCD</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13632"/>
+        <location filename="ui_mesact.py" line="13653"/>
         <source>W7 Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13633"/>
+        <location filename="ui_mesact.py" line="13654"/>
         <source>I/O P2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13634"/>
+        <location filename="ui_mesact.py" line="13655"/>
         <source>In 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13635"/>
+        <location filename="ui_mesact.py" line="13656"/>
         <source>In 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13636"/>
+        <location filename="ui_mesact.py" line="13657"/>
         <source>Out 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13637"/>
+        <location filename="ui_mesact.py" line="13658"/>
         <source>In 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13638"/>
+        <location filename="ui_mesact.py" line="13659"/>
         <source>In 13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13639"/>
+        <location filename="ui_mesact.py" line="13660"/>
         <source>In 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13640"/>
+        <location filename="ui_mesact.py" line="13661"/>
         <source>In 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13641"/>
+        <location filename="ui_mesact.py" line="13662"/>
         <source>In 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13642"/>
+        <location filename="ui_mesact.py" line="13663"/>
         <source>In 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13643"/>
+        <location filename="ui_mesact.py" line="13664"/>
         <source>In 11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13644"/>
+        <location filename="ui_mesact.py" line="13665"/>
         <source>In 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13645"/>
+        <location filename="ui_mesact.py" line="13666"/>
         <source>In 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13646"/>
+        <location filename="ui_mesact.py" line="13667"/>
         <source>In 9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13647"/>
+        <location filename="ui_mesact.py" line="13668"/>
         <source>In 12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13648"/>
+        <location filename="ui_mesact.py" line="13669"/>
         <source>In 10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13649"/>
+        <location filename="ui_mesact.py" line="13670"/>
         <source>In 14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13650"/>
+        <location filename="ui_mesact.py" line="13671"/>
         <source>In 15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13651"/>
+        <location filename="ui_mesact.py" line="13672"/>
         <source>Out 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13670"/>
+        <location filename="ui_mesact.py" line="13691"/>
         <source>Keypad-LCD P1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13671"/>
+        <location filename="ui_mesact.py" line="13692"/>
         <source>Key 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13672"/>
+        <location filename="ui_mesact.py" line="13693"/>
         <source>LCD 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13673"/>
+        <location filename="ui_mesact.py" line="13694"/>
         <source>Key 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13674"/>
+        <location filename="ui_mesact.py" line="13695"/>
         <source>Key 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13675"/>
+        <location filename="ui_mesact.py" line="13696"/>
         <source>Key 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13676"/>
+        <location filename="ui_mesact.py" line="13697"/>
         <source>Key 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13677"/>
+        <location filename="ui_mesact.py" line="13698"/>
         <source>Key 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13678"/>
+        <location filename="ui_mesact.py" line="13699"/>
         <source>Key 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13679"/>
+        <location filename="ui_mesact.py" line="13700"/>
         <source>Key 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13680"/>
+        <location filename="ui_mesact.py" line="13701"/>
         <source>Key 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13681"/>
+        <location filename="ui_mesact.py" line="13702"/>
         <source>Key 9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13682"/>
+        <location filename="ui_mesact.py" line="13703"/>
         <source>Key 10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13683"/>
+        <location filename="ui_mesact.py" line="13704"/>
         <source>Key 11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13684"/>
+        <location filename="ui_mesact.py" line="13705"/>
         <source>Key 12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13685"/>
+        <location filename="ui_mesact.py" line="13706"/>
         <source>Key 13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13686"/>
+        <location filename="ui_mesact.py" line="13707"/>
         <source>Key 14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13687"/>
+        <location filename="ui_mesact.py" line="13708"/>
         <source>Key 15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13688"/>
+        <location filename="ui_mesact.py" line="13709"/>
         <source>LCD 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13689"/>
+        <location filename="ui_mesact.py" line="13710"/>
         <source>LCD 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13690"/>
+        <location filename="ui_mesact.py" line="13711"/>
         <source>LCD 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13691"/>
+        <location filename="ui_mesact.py" line="13712"/>
         <source>LCD 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13692"/>
+        <location filename="ui_mesact.py" line="13713"/>
         <source>LCD 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13693"/>
+        <location filename="ui_mesact.py" line="13714"/>
         <source>LCD 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13694"/>
+        <location filename="ui_mesact.py" line="13715"/>
         <source>LCD 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13695"/>
+        <location filename="ui_mesact.py" line="13716"/>
         <source>LCD 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13696"/>
+        <location filename="ui_mesact.py" line="13717"/>
         <source>LCD 9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13697"/>
+        <location filename="ui_mesact.py" line="13718"/>
         <source>LCD 10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13698"/>
+        <location filename="ui_mesact.py" line="13719"/>
         <source>LCD 11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13727"/>
+        <location filename="ui_mesact.py" line="13748"/>
         <source>7i84</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13728"/>
+        <location filename="ui_mesact.py" line="13749"/>
         <source>Outputs 8 - 15 TB2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13745"/>
+        <location filename="ui_mesact.py" line="13766"/>
         <source>Outputs 0 - 7 TB3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13762"/>
+        <location filename="ui_mesact.py" line="13783"/>
         <source>Inputs 0 - 15 TB3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13795"/>
+        <location filename="ui_mesact.py" line="13816"/>
         <source>Inputs 16 - 31 TB2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13828"/>
+        <location filename="ui_mesact.py" line="13849"/>
         <source>7i87</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13829"/>
+        <location filename="ui_mesact.py" line="13850"/>
         <source>Analog Inputs 0 - 7 TB2</source>
         <translation>Analoge Eingänge 0 - 7 TB2</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13846"/>
+        <location filename="ui_mesact.py" line="13867"/>
         <source>SS Cards</source>
         <translation>SS Karten</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13059"/>
+        <location filename="ui_mesact.py" line="13080"/>
         <source>For Spindle On, Spindle CW/CCW use an output.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13073"/>
+        <location filename="ui_mesact.py" line="13094"/>
         <source>Spindle Settings</source>
         <translation>Spindel-Einstellungen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13098"/>
+        <location filename="ui_mesact.py" line="13119"/>
         <source>PWM Frequency</source>
         <translation>PWM-Frequenz</translation>
     </message>
@@ -1300,877 +1300,877 @@ TB2 PIN    SIGNAL    CAT5 PIN    CAT5 568B COLOR
         <translation type="obsolete">Min. UPM</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13100"/>
+        <location filename="ui_mesact.py" line="13121"/>
         <source>Spindle</source>
         <translation>Spindel</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13887"/>
+        <location filename="ui_mesact.py" line="13908"/>
         <source>Tool Changer Type</source>
         <translation>Werkzeugwechsler-Typ</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13888"/>
+        <location filename="ui_mesact.py" line="13909"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13889"/>
+        <location filename="ui_mesact.py" line="13910"/>
         <source>Tool Changer</source>
         <translation>Werkzeugwechsler</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13890"/>
+        <location filename="ui_mesact.py" line="13911"/>
         <source>On Screen Prompt for Manual Tool Change</source>
         <translation>Bildschirmmitteilung für manuellen Werkzeugwechsel</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13891"/>
+        <location filename="ui_mesact.py" line="13912"/>
         <source>Debug Options</source>
         <translation>Debug-Optionen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13892"/>
+        <location filename="ui_mesact.py" line="13913"/>
         <source>us</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13893"/>
+        <location filename="ui_mesact.py" line="13914"/>
         <source>Thread Period</source>
         <translation>Thread Periode</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13894"/>
+        <location filename="ui_mesact.py" line="13915"/>
         <source>HAL Options</source>
         <translation>HAL-Optionen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13895"/>
+        <location filename="ui_mesact.py" line="13916"/>
         <source>Shutdown HAL File</source>
         <translation>Shutdown HAL-Datei</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13896"/>
+        <location filename="ui_mesact.py" line="13917"/>
         <source>Custom HAL File</source>
         <translation>Benutzerdef. HAL-Datei</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13897"/>
+        <location filename="ui_mesact.py" line="13918"/>
         <source>Post GUI HAL File</source>
         <translation>Post GUI HAL_Datei</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13898"/>
+        <location filename="ui_mesact.py" line="13919"/>
         <source>Halui User Interface</source>
         <translation>Halui Benutzerschnittstelle einbinden</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13899"/>
+        <location filename="ui_mesact.py" line="13920"/>
         <source>VCP Panels</source>
         <translation>VCP Panele</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13900"/>
+        <location filename="ui_mesact.py" line="13921"/>
         <source>PyVCP Panel</source>
         <translation>PyVCP Panel</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13901"/>
+        <location filename="ui_mesact.py" line="13922"/>
         <source>GladeVCP Panel</source>
         <translation>GladeVCP Panel</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13902"/>
+        <location filename="ui_mesact.py" line="13923"/>
         <source>If you change the Thread Period reload PID values</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13903"/>
+        <location filename="ui_mesact.py" line="13924"/>
         <source>Splash Screen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13904"/>
+        <location filename="ui_mesact.py" line="13925"/>
         <source>Display Seconds</source>
         <translation>Sekunden anzeigen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13905"/>
+        <location filename="ui_mesact.py" line="13926"/>
         <source>Intro Graphic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13906"/>
+        <location filename="ui_mesact.py" line="13927"/>
         <source>emc2.gif</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13907"/>
+        <location filename="ui_mesact.py" line="13928"/>
         <source>0 for no Intro Graphic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13908"/>
+        <location filename="ui_mesact.py" line="13929"/>
         <source>Homing Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13909"/>
+        <location filename="ui_mesact.py" line="13930"/>
         <source>No Force Homing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13915"/>
+        <location filename="ui_mesact.py" line="13936"/>
         <source>ClassicLadder PLC</source>
         <translation>ClassicLadder SPS</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13917"/>
+        <location filename="ui_mesact.py" line="13938"/>
         <source>Rungs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13918"/>
+        <location filename="ui_mesact.py" line="13939"/>
         <source>Monostables</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13919"/>
+        <location filename="ui_mesact.py" line="13940"/>
         <source>numWords</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13920"/>
+        <location filename="ui_mesact.py" line="13941"/>
         <source>LADDER_WORDS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13921"/>
+        <location filename="ui_mesact.py" line="13942"/>
         <source>100</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13922"/>
+        <location filename="ui_mesact.py" line="13943"/>
         <source>HAL Inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13923"/>
+        <location filename="ui_mesact.py" line="13944"/>
         <source>numTimers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13924"/>
+        <location filename="ui_mesact.py" line="13945"/>
         <source>LADDER_TIMERS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13925"/>
+        <location filename="ui_mesact.py" line="13946"/>
         <source>numRungs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13926"/>
+        <location filename="ui_mesact.py" line="13947"/>
         <source>LADDER_RUNGS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13927"/>
+        <location filename="ui_mesact.py" line="13948"/>
         <source>Timers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13928"/>
+        <location filename="ui_mesact.py" line="13949"/>
         <source>numPhysInputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13929"/>
+        <location filename="ui_mesact.py" line="13950"/>
         <source>LADDER_HAL_INPUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13930"/>
+        <location filename="ui_mesact.py" line="13951"/>
         <source>Default</source>
         <translation>Standard</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13932"/>
+        <location filename="ui_mesact.py" line="13953"/>
         <source>numTimersIec</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13933"/>
+        <location filename="ui_mesact.py" line="13954"/>
         <source>LADDER_IEC_TIMERS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13934"/>
+        <location filename="ui_mesact.py" line="13955"/>
         <source>HAL Outputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13935"/>
+        <location filename="ui_mesact.py" line="13956"/>
         <source>Bits</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13936"/>
+        <location filename="ui_mesact.py" line="13957"/>
         <source>numPhysOutputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13937"/>
+        <location filename="ui_mesact.py" line="13958"/>
         <source>LADDER_HAL_OUTPUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13939"/>
+        <location filename="ui_mesact.py" line="13960"/>
         <source>numSections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13940"/>
+        <location filename="ui_mesact.py" line="13961"/>
         <source>LADDER_SECTIONS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13941"/>
+        <location filename="ui_mesact.py" line="13962"/>
         <source>Counters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13943"/>
+        <location filename="ui_mesact.py" line="13964"/>
         <source>Sections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13944"/>
+        <location filename="ui_mesact.py" line="13965"/>
         <source>Words</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13945"/>
+        <location filename="ui_mesact.py" line="13966"/>
         <source>numArithmExpr</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13946"/>
+        <location filename="ui_mesact.py" line="13967"/>
         <source>LADDER_EXPRESSIONS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13949"/>
+        <location filename="ui_mesact.py" line="13970"/>
         <source>numBits</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13950"/>
+        <location filename="ui_mesact.py" line="13971"/>
         <source>LADDER_BITS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13951"/>
+        <location filename="ui_mesact.py" line="13972"/>
         <source>numMonostables</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13952"/>
+        <location filename="ui_mesact.py" line="13973"/>
         <source>LADDER_MONOSTABLES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13953"/>
+        <location filename="ui_mesact.py" line="13974"/>
         <source>Arithmatic Expresions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13954"/>
+        <location filename="ui_mesact.py" line="13975"/>
         <source>50</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13956"/>
+        <location filename="ui_mesact.py" line="13977"/>
         <source>numCounters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13957"/>
+        <location filename="ui_mesact.py" line="13978"/>
         <source>LADDER_COUNTERS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13959"/>
+        <location filename="ui_mesact.py" line="13980"/>
         <source>S32 Inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13960"/>
+        <location filename="ui_mesact.py" line="13981"/>
         <source>Float Inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13961"/>
+        <location filename="ui_mesact.py" line="13982"/>
         <source>IEC Timers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13963"/>
+        <location filename="ui_mesact.py" line="13984"/>
         <source>Symbols</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13964"/>
+        <location filename="ui_mesact.py" line="13985"/>
         <source>S32 Outputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13965"/>
+        <location filename="ui_mesact.py" line="13986"/>
         <source>Float Outputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13966"/>
+        <location filename="ui_mesact.py" line="13987"/>
         <source>numSymbols</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13967"/>
+        <location filename="ui_mesact.py" line="13988"/>
         <source>LADDER_SYMBOLS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13968"/>
+        <location filename="ui_mesact.py" line="13989"/>
         <source>numS32in</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13969"/>
+        <location filename="ui_mesact.py" line="13990"/>
         <source>LADDER_S32_INPUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13970"/>
+        <location filename="ui_mesact.py" line="13991"/>
         <source>numS32out</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13971"/>
+        <location filename="ui_mesact.py" line="13992"/>
         <source>LADDER_S32_OUTPUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13972"/>
+        <location filename="ui_mesact.py" line="13993"/>
         <source>numFloatIn</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13973"/>
+        <location filename="ui_mesact.py" line="13994"/>
         <source>LADDER_FLOAT_INPUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13974"/>
+        <location filename="ui_mesact.py" line="13995"/>
         <source>numFloatOut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13975"/>
+        <location filename="ui_mesact.py" line="13996"/>
         <source>LADDER_FLOAT_OUTPUTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13976"/>
+        <location filename="ui_mesact.py" line="13997"/>
         <source>Auto</source>
         <translation>Auto</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13981"/>
+        <location filename="ui_mesact.py" line="14002"/>
         <source>Optional Settings</source>
         <translation>Optionale Einstellungen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13982"/>
+        <location filename="ui_mesact.py" line="14003"/>
         <source>Leave at 0 for default settings to be used</source>
         <translation>Bei 0 belassen um Standardeinstellungen zu verwenden</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13983"/>
+        <location filename="ui_mesact.py" line="14004"/>
         <source>PLC</source>
         <translation>SPS</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13986"/>
+        <location filename="ui_mesact.py" line="14007"/>
         <source>TB1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14086"/>
+        <location filename="ui_mesact.py" line="14107"/>
         <source>Pin 22</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14087"/>
+        <location filename="ui_mesact.py" line="14108"/>
         <source>Pin 24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14088"/>
+        <location filename="ui_mesact.py" line="14109"/>
         <source>Pin 16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14089"/>
+        <location filename="ui_mesact.py" line="14110"/>
         <source>Pin 19</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14090"/>
+        <location filename="ui_mesact.py" line="14111"/>
         <source>Pin 9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14091"/>
+        <location filename="ui_mesact.py" line="14112"/>
         <source>Pin 20</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14092"/>
+        <location filename="ui_mesact.py" line="14113"/>
         <source>Pin 13</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14093"/>
+        <location filename="ui_mesact.py" line="14114"/>
         <source>Pin 15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14094"/>
+        <location filename="ui_mesact.py" line="14115"/>
         <source>Pin 11</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14095"/>
+        <location filename="ui_mesact.py" line="14116"/>
         <source>Pin 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14096"/>
+        <location filename="ui_mesact.py" line="14117"/>
         <source>Pin 18</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14097"/>
+        <location filename="ui_mesact.py" line="14118"/>
         <source>Pin 12</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14098"/>
+        <location filename="ui_mesact.py" line="14119"/>
         <source>Pin 23</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14099"/>
+        <location filename="ui_mesact.py" line="14120"/>
         <source>Pin 14</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14100"/>
+        <location filename="ui_mesact.py" line="14121"/>
         <source>Pin 21</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14101"/>
+        <location filename="ui_mesact.py" line="14122"/>
         <source>Pin 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14102"/>
+        <location filename="ui_mesact.py" line="14123"/>
         <source>Pin 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14103"/>
+        <location filename="ui_mesact.py" line="14124"/>
         <source>Pin 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14104"/>
+        <location filename="ui_mesact.py" line="14125"/>
         <source>Pin 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14105"/>
+        <location filename="ui_mesact.py" line="14126"/>
         <source>Pin 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14106"/>
+        <location filename="ui_mesact.py" line="14127"/>
         <source>Pin 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14107"/>
+        <location filename="ui_mesact.py" line="14128"/>
         <source>Pin 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14108"/>
+        <location filename="ui_mesact.py" line="14129"/>
         <source>Pin 10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14109"/>
+        <location filename="ui_mesact.py" line="14130"/>
         <source>Pin 17</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14078"/>
+        <location filename="ui_mesact.py" line="14099"/>
         <source>+5v</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14012"/>
+        <location filename="ui_mesact.py" line="14033"/>
         <source>Direction 3 +</source>
         <translation type="unfinished">Richtung 4 + {3 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14013"/>
+        <location filename="ui_mesact.py" line="14034"/>
         <source>Direction 3 -</source>
         <translation type="unfinished">Richtung 4 - {3 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14014"/>
+        <location filename="ui_mesact.py" line="14035"/>
         <source>Step 3 +</source>
         <translation type="unfinished">Schritt 4 + {3 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14015"/>
+        <location filename="ui_mesact.py" line="14036"/>
         <source>Step 3 -</source>
         <translation type="unfinished">Schritt 4 - {3 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14083"/>
+        <location filename="ui_mesact.py" line="14104"/>
         <source>Ground</source>
         <translation>Masse</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14018"/>
+        <location filename="ui_mesact.py" line="14039"/>
         <source>Direction 2 +</source>
         <translation type="unfinished">Richtung 4 + {2 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14019"/>
+        <location filename="ui_mesact.py" line="14040"/>
         <source>Direction 2 -</source>
         <translation type="unfinished">Richtung 4 - {2 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14020"/>
+        <location filename="ui_mesact.py" line="14041"/>
         <source>Step 2 +</source>
         <translation type="unfinished">Schritt 4 + {2 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14021"/>
+        <location filename="ui_mesact.py" line="14042"/>
         <source>Step 2 -</source>
         <translation type="unfinished">Schritt 4 - {2 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14024"/>
+        <location filename="ui_mesact.py" line="14045"/>
         <source>Direction 1 +</source>
         <translation type="unfinished">Richtung 4 + {1 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14025"/>
+        <location filename="ui_mesact.py" line="14046"/>
         <source>Direction 1 -</source>
         <translation type="unfinished">Richtung 4 - {1 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14026"/>
+        <location filename="ui_mesact.py" line="14047"/>
         <source>Step 1 +</source>
         <translation type="unfinished">Schritt 4 + {1 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14027"/>
+        <location filename="ui_mesact.py" line="14048"/>
         <source>Step 1 -</source>
         <translation type="unfinished">Schritt 4 - {1 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14030"/>
+        <location filename="ui_mesact.py" line="14051"/>
         <source>Direction 0 +</source>
         <translation type="unfinished">Richtung 4 + {0 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14031"/>
+        <location filename="ui_mesact.py" line="14052"/>
         <source>Direction 0 -</source>
         <translation type="unfinished">Richtung 4 - {0 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14032"/>
+        <location filename="ui_mesact.py" line="14053"/>
         <source>Step 0 +</source>
         <translation type="unfinished">Schritt 4 + {0 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14033"/>
+        <location filename="ui_mesact.py" line="14054"/>
         <source>Step 0 -</source>
         <translation type="unfinished">Schritt 4 - {0 ?}</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14035"/>
+        <location filename="ui_mesact.py" line="14056"/>
         <source>TB2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14063"/>
+        <location filename="ui_mesact.py" line="14084"/>
         <source>5v In</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14065"/>
+        <location filename="ui_mesact.py" line="14086"/>
         <source>RS-422/485 TX-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14066"/>
+        <location filename="ui_mesact.py" line="14087"/>
         <source>RS-422/485 TX+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14067"/>
+        <location filename="ui_mesact.py" line="14088"/>
         <source>RS-422/485 RX-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14068"/>
+        <location filename="ui_mesact.py" line="14089"/>
         <source>RS-422/485 RX+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14070"/>
+        <location filename="ui_mesact.py" line="14091"/>
         <source>Index -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14071"/>
+        <location filename="ui_mesact.py" line="14092"/>
         <source>Index +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14073"/>
+        <location filename="ui_mesact.py" line="14094"/>
         <source>Encoder B-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14074"/>
+        <location filename="ui_mesact.py" line="14095"/>
         <source>Encoder B+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14076"/>
+        <location filename="ui_mesact.py" line="14097"/>
         <source>Encoder A-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14077"/>
+        <location filename="ui_mesact.py" line="14098"/>
         <source>Encoder A+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14079"/>
+        <location filename="ui_mesact.py" line="14100"/>
         <source>Direction 4 +</source>
         <translation>Richtung 4 +</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14080"/>
+        <location filename="ui_mesact.py" line="14101"/>
         <source>Direction 4 -</source>
         <translation>Richtung 4 -</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14081"/>
+        <location filename="ui_mesact.py" line="14102"/>
         <source>Step 4 +</source>
         <translation>Schritt 4 +</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14082"/>
+        <location filename="ui_mesact.py" line="14103"/>
         <source>Step 4 -</source>
         <translation>Schritt 4 -</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14085"/>
+        <location filename="ui_mesact.py" line="14106"/>
         <source>TB3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14110"/>
+        <location filename="ui_mesact.py" line="14131"/>
         <source>Output 5 +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14111"/>
+        <location filename="ui_mesact.py" line="14132"/>
         <source>Output 5 -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14112"/>
+        <location filename="ui_mesact.py" line="14133"/>
         <source>Output 4 +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14113"/>
+        <location filename="ui_mesact.py" line="14134"/>
         <source>Output 4 -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14114"/>
+        <location filename="ui_mesact.py" line="14135"/>
         <source>Output 3 +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14115"/>
+        <location filename="ui_mesact.py" line="14136"/>
         <source>Output 3 -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14116"/>
+        <location filename="ui_mesact.py" line="14137"/>
         <source>Output 2 +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14117"/>
+        <location filename="ui_mesact.py" line="14138"/>
         <source>Output 2 -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14118"/>
+        <location filename="ui_mesact.py" line="14139"/>
         <source>Output 1 +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14119"/>
+        <location filename="ui_mesact.py" line="14140"/>
         <source>Output 1 -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14120"/>
+        <location filename="ui_mesact.py" line="14141"/>
         <source>Output 0 +</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14121"/>
+        <location filename="ui_mesact.py" line="14142"/>
         <source>Output 0 -</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14122"/>
+        <location filename="ui_mesact.py" line="14143"/>
         <source>Input Common</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14123"/>
+        <location filename="ui_mesact.py" line="14144"/>
         <source>Input 10</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14124"/>
+        <location filename="ui_mesact.py" line="14145"/>
         <source>Input 9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14125"/>
+        <location filename="ui_mesact.py" line="14146"/>
         <source>Input 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14126"/>
+        <location filename="ui_mesact.py" line="14147"/>
         <source>Input 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14127"/>
+        <location filename="ui_mesact.py" line="14148"/>
         <source>Input 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14128"/>
+        <location filename="ui_mesact.py" line="14149"/>
         <source>Input 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14129"/>
+        <location filename="ui_mesact.py" line="14150"/>
         <source>Input 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14130"/>
+        <location filename="ui_mesact.py" line="14151"/>
         <source>Input 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14131"/>
+        <location filename="ui_mesact.py" line="14152"/>
         <source>Input 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14132"/>
+        <location filename="ui_mesact.py" line="14153"/>
         <source>Input 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14133"/>
+        <location filename="ui_mesact.py" line="14154"/>
         <source>Input 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14136"/>
+        <location filename="ui_mesact.py" line="14157"/>
         <source>Terminals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14137"/>
+        <location filename="ui_mesact.py" line="14158"/>
         <source>Get Card Pinout</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14139"/>
+        <location filename="ui_mesact.py" line="14160"/>
         <source>Raw output</source>
         <translation>RAW Ausgabe</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14140"/>
+        <location filename="ui_mesact.py" line="14161"/>
         <source>Pins</source>
         <translation>Pins</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14141"/>
+        <location filename="ui_mesact.py" line="14162"/>
         <source>Central Processing Unit</source>
         <translation>Prozessor</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14142"/>
+        <location filename="ui_mesact.py" line="14163"/>
         <source>CPU</source>
         <translation>CPU</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14143"/>
+        <location filename="ui_mesact.py" line="14164"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Network Interface Card&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14144"/>
+        <location filename="ui_mesact.py" line="14165"/>
         <source>NIC</source>
         <translation>NIC</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14146"/>
+        <location filename="ui_mesact.py" line="14167"/>
         <source>PC Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14162"/>
+        <location filename="ui_mesact.py" line="14183"/>
         <source>NIC Test</source>
         <translation>NIC-Test</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14163"/>
+        <location filename="ui_mesact.py" line="14184"/>
         <source>CPU Speed</source>
         <translation>CPU-Geschw.</translation>
     </message>
@@ -2180,7 +2180,7 @@ TB2 PIN    SIGNAL    CAT5 PIN    CAT5 568B COLOR
         <translation type="obsolete">tMax</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14171"/>
+        <location filename="ui_mesact.py" line="14192"/>
         <source>Calculate</source>
         <translation>Berechnen</translation>
     </message>
@@ -2190,7 +2190,7 @@ TB2 PIN    SIGNAL    CAT5 PIN    CAT5 568B COLOR
         <translation type="obsolete">Schwellwert</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14164"/>
+        <location filename="ui_mesact.py" line="14185"/>
         <source>Packet Time</source>
         <translation>Paketzeit</translation>
     </message>
@@ -2200,933 +2200,933 @@ TB2 PIN    SIGNAL    CAT5 PIN    CAT5 568B COLOR
         <translation type="obsolete">Die Paketzeit muss unter dem Schwellenwert liegen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14168"/>
+        <location filename="ui_mesact.py" line="14189"/>
         <source>LinuxCNC must be running
 the configuration.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14167"/>
+        <location filename="ui_mesact.py" line="14188"/>
         <source>Get read.tmax</source>
         <translation type="unfinished">Lese tMax</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14176"/>
+        <location filename="ui_mesact.py" line="14197"/>
         <source>PC</source>
         <translation>PC</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14177"/>
+        <location filename="ui_mesact.py" line="14198"/>
         <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14178"/>
+        <location filename="ui_mesact.py" line="14199"/>
         <source>Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14179"/>
+        <location filename="ui_mesact.py" line="14200"/>
         <source>Language</source>
         <translation>Sprache</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14181"/>
+        <location filename="ui_mesact.py" line="14202"/>
         <source>toolBar</source>
         <translation>Werkzeugleiste</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14182"/>
+        <location filename="ui_mesact.py" line="14203"/>
         <source>Open .ini File</source>
         <translation>Ini-Datei öffnen</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14184"/>
+        <location filename="ui_mesact.py" line="14205"/>
         <source>Check Config</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14186"/>
+        <location filename="ui_mesact.py" line="14207"/>
         <source>Build Config</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14188"/>
+        <location filename="ui_mesact.py" line="14209"/>
         <source>English</source>
         <translation>Englisch</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14190"/>
+        <location filename="ui_mesact.py" line="14211"/>
         <source>Fran&#xc3;&#xa7;ais</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14191"/>
+        <location filename="ui_mesact.py" line="14212"/>
         <source>Deutsch</source>
         <translation>Deutsch</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12880"/>
+        <location filename="ui_mesact.py" line="12901"/>
         <source>Time to accelerate
 to max speed</source>
         <translation>Zeit bis zum erreichend der maximalen Geschwindigkeit</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12882"/>
+        <location filename="ui_mesact.py" line="12903"/>
         <source>Distance to accelerate
 to max speed</source>
         <translation>Weg bis zum erreichend dermaximalen Geschwindigkeit</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12884"/>
+        <location filename="ui_mesact.py" line="12905"/>
         <source>Step rate at
 max speed</source>
         <translation>Schrittfrequenz bei maximaler Geschwindigkeit</translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14180"/>
+        <location filename="ui_mesact.py" line="14201"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14192"/>
+        <location filename="ui_mesact.py" line="14213"/>
         <source>Tab Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14193"/>
+        <location filename="ui_mesact.py" line="14214"/>
         <source>F1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13093"/>
+        <location filename="ui_mesact.py" line="13114"/>
         <source>Invert Step</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13088"/>
+        <location filename="ui_mesact.py" line="13109"/>
         <source>Invert Direction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12888"/>
+        <location filename="ui_mesact.py" line="12909"/>
         <source>Following Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12890"/>
+        <location filename="ui_mesact.py" line="12911"/>
         <source>Min</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12891"/>
+        <location filename="ui_mesact.py" line="12912"/>
         <source>Max</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13910"/>
+        <location filename="ui_mesact.py" line="13931"/>
         <source>ReadMe File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13911"/>
+        <location filename="ui_mesact.py" line="13932"/>
         <source>Text entered here will be put in the ReadMe file, if blank none will be created</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11754"/>
+        <location filename="ui_mesact.py" line="11775"/>
         <source>Board Notes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14194"/>
+        <location filename="ui_mesact.py" line="14215"/>
         <source>Check for Updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14195"/>
+        <location filename="ui_mesact.py" line="14216"/>
         <source>Download Deb</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14196"/>
+        <location filename="ui_mesact.py" line="14217"/>
         <source>Download Zip</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12928"/>
+        <location filename="ui_mesact.py" line="12949"/>
         <source>Inputs 0-15</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13057"/>
+        <location filename="ui_mesact.py" line="13078"/>
         <source>Debounce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12993"/>
+        <location filename="ui_mesact.py" line="13014"/>
         <source>Inputs 16-31</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12397"/>
+        <location filename="ui_mesact.py" line="12418"/>
         <source>Select Units
 Machine Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12894"/>
+        <location filename="ui_mesact.py" line="12915"/>
         <source>Axes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13083"/>
+        <location filename="ui_mesact.py" line="13104"/>
         <source>Output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13082"/>
+        <location filename="ui_mesact.py" line="13103"/>
         <source>Feedback</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13886"/>
+        <location filename="ui_mesact.py" line="13907"/>
         <source>GPIO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13849"/>
+        <location filename="ui_mesact.py" line="13870"/>
         <source>Primary</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13850"/>
+        <location filename="ui_mesact.py" line="13871"/>
         <source>Secondary</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13885"/>
+        <location filename="ui_mesact.py" line="13906"/>
         <source>Pin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12013"/>
+        <location filename="ui_mesact.py" line="12034"/>
         <source>Jog Slider Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12014"/>
+        <location filename="ui_mesact.py" line="12035"/>
         <source>Default Angular Velocity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12015"/>
+        <location filename="ui_mesact.py" line="12036"/>
         <source>Minimum Linear Velocity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12016"/>
+        <location filename="ui_mesact.py" line="12037"/>
         <source>Minimum Angular Velocity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12017"/>
+        <location filename="ui_mesact.py" line="12038"/>
         <source>Default Linear Velocity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12018"/>
+        <location filename="ui_mesact.py" line="12039"/>
         <source>Maximum Linear Velocity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12019"/>
+        <location filename="ui_mesact.py" line="12040"/>
         <source>Maximum Angular Velocity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14197"/>
+        <location filename="ui_mesact.py" line="14218"/>
         <source>Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11687"/>
+        <location filename="ui_mesact.py" line="11708"/>
         <source>Load this Configuration at Startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13912"/>
+        <location filename="ui_mesact.py" line="13933"/>
         <source>Startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13913"/>
+        <location filename="ui_mesact.py" line="13934"/>
         <source>Check for Mesaflash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14183"/>
+        <location filename="ui_mesact.py" line="14204"/>
         <source>Open an .ini File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14185"/>
+        <location filename="ui_mesact.py" line="14206"/>
         <source>Check For Errors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14187"/>
+        <location filename="ui_mesact.py" line="14208"/>
         <source>Build Configuration Files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14198"/>
+        <location filename="ui_mesact.py" line="14219"/>
         <source>Open PDF Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14138"/>
+        <location filename="ui_mesact.py" line="14159"/>
         <source>LinuxCNC must not be running to get the Pinout</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11765"/>
+        <location filename="ui_mesact.py" line="11786"/>
         <source>Manuals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13984"/>
+        <location filename="ui_mesact.py" line="14005"/>
         <source>Depending on the Board or Daughter Card selected this will show the standard pinout</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13985"/>
+        <location filename="ui_mesact.py" line="14006"/>
         <source>7i76E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14084"/>
+        <location filename="ui_mesact.py" line="14105"/>
         <source>7i96</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14134"/>
+        <location filename="ui_mesact.py" line="14155"/>
         <source>7i96S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14135"/>
+        <location filename="ui_mesact.py" line="14156"/>
         <source>7i97</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11763"/>
+        <location filename="ui_mesact.py" line="11784"/>
         <source>Open Manual</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11756"/>
+        <location filename="ui_mesact.py" line="11777"/>
         <source>Main Board Manuals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11757"/>
+        <location filename="ui_mesact.py" line="11778"/>
         <source>Daughter Card Manuals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11758"/>
+        <location filename="ui_mesact.py" line="11779"/>
         <source>Smart Serial Card Manuals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11759"/>
+        <location filename="ui_mesact.py" line="11780"/>
         <source>Misc. Manuals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11764"/>
+        <location filename="ui_mesact.py" line="11785"/>
         <source>All in One Manuals</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11723"/>
+        <location filename="ui_mesact.py" line="11744"/>
         <source>SSERIAL Wiring using Standard CAT5/6 Cable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11724"/>
+        <location filename="ui_mesact.py" line="11745"/>
         <source>GND</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11725"/>
+        <location filename="ui_mesact.py" line="11746"/>
         <source>TX+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11726"/>
+        <location filename="ui_mesact.py" line="11747"/>
         <source>SIGNAL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11728"/>
+        <location filename="ui_mesact.py" line="11749"/>
         <source>RX-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11729"/>
+        <location filename="ui_mesact.py" line="11750"/>
         <source>CAT5/6 PIN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11730"/>
+        <location filename="ui_mesact.py" line="11751"/>
         <source>RX+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11731"/>
+        <location filename="ui_mesact.py" line="11752"/>
         <source>TX-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11751"/>
+        <location filename="ui_mesact.py" line="11772"/>
         <source>TB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11733"/>
+        <location filename="ui_mesact.py" line="11754"/>
         <source>+5V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11734"/>
+        <location filename="ui_mesact.py" line="11755"/>
         <source>4,5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11739"/>
+        <location filename="ui_mesact.py" line="11760"/>
         <source>7,8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11740"/>
+        <location filename="ui_mesact.py" line="11761"/>
         <source>BLUE, BLUE/WHITE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11741"/>
+        <location filename="ui_mesact.py" line="11762"/>
         <source>GREEN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11742"/>
+        <location filename="ui_mesact.py" line="11763"/>
         <source>GREEN/WHITE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11743"/>
+        <location filename="ui_mesact.py" line="11764"/>
         <source>ORANGE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11744"/>
+        <location filename="ui_mesact.py" line="11765"/>
         <source>ORANGE/WHITE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11745"/>
+        <location filename="ui_mesact.py" line="11766"/>
         <source>BROWN, BROWN/WHITE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11753"/>
+        <location filename="ui_mesact.py" line="11774"/>
         <source>Smart Serial</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11727"/>
+        <location filename="ui_mesact.py" line="11748"/>
         <source>CAT5/6 568B COLOR(S)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11752"/>
+        <location filename="ui_mesact.py" line="11773"/>
         <source>GroupBox</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11773"/>
+        <location filename="ui_mesact.py" line="11794"/>
         <source>Schematics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13096"/>
+        <location filename="ui_mesact.py" line="13117"/>
         <source>PWM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13097"/>
+        <location filename="ui_mesact.py" line="13118"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13099"/>
+        <location filename="ui_mesact.py" line="13120"/>
         <source> Hz</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13077"/>
+        <location filename="ui_mesact.py" line="13098"/>
         <source>Maximum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13078"/>
+        <location filename="ui_mesact.py" line="13099"/>
         <source>Minimum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13075"/>
+        <location filename="ui_mesact.py" line="13096"/>
         <source>RPM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13076"/>
+        <location filename="ui_mesact.py" line="13097"/>
         <source>RPS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13079"/>
+        <location filename="ui_mesact.py" line="13100"/>
         <source>RPM/S/S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13074"/>
+        <location filename="ui_mesact.py" line="13095"/>
         <source>Max Acceleration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="13080"/>
+        <location filename="ui_mesact.py" line="13101"/>
         <source>RPS/S/S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11676"/>
+        <location filename="ui_mesact.py" line="11697"/>
         <source>Enable
 Backups</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11694"/>
+        <location filename="ui_mesact.py" line="11715"/>
         <source>Check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11693"/>
+        <location filename="ui_mesact.py" line="11714"/>
         <source>Check if selected board is found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11706"/>
+        <location filename="ui_mesact.py" line="11727"/>
         <source>Flash Selected Firmware
 to the Board</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11709"/>
+        <location filename="ui_mesact.py" line="11730"/>
         <source>Verify Selected Firmware
 is the same as the board</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11715"/>
+        <location filename="ui_mesact.py" line="11736"/>
         <source>Read hostmot2 in
 PIN file format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11915"/>
+        <location filename="ui_mesact.py" line="11936"/>
         <source>7i78</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11780"/>
+        <location filename="ui_mesact.py" line="11801"/>
         <source>PCI PCIe Mother Boards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11785"/>
+        <location filename="ui_mesact.py" line="11806"/>
         <source>PCI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11783"/>
+        <location filename="ui_mesact.py" line="11804"/>
         <source>PCIe</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11784"/>
+        <location filename="ui_mesact.py" line="11805"/>
         <source>5i25</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11975"/>
+        <location filename="ui_mesact.py" line="11996"/>
         <source>Interface</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11787"/>
+        <location filename="ui_mesact.py" line="11808"/>
         <source>5i24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11788"/>
+        <location filename="ui_mesact.py" line="11809"/>
         <source>6i25</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11789"/>
+        <location filename="ui_mesact.py" line="11810"/>
         <source>6i24</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11793"/>
+        <location filename="ui_mesact.py" line="11814"/>
         <source>3 IDC 50 Male</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11800"/>
+        <location filename="ui_mesact.py" line="11821"/>
         <source>Ports</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11795"/>
+        <location filename="ui_mesact.py" line="11816"/>
         <source>1 DB25F 1 IDC 26 Male</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11796"/>
+        <location filename="ui_mesact.py" line="11817"/>
         <source>Ethernet Mother Boards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11797"/>
+        <location filename="ui_mesact.py" line="11818"/>
         <source>7i80HD-16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11798"/>
+        <location filename="ui_mesact.py" line="11819"/>
         <source>7i93</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11799"/>
+        <location filename="ui_mesact.py" line="11820"/>
         <source>1 DB25F 1 IDC 26M</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11863"/>
+        <location filename="ui_mesact.py" line="11884"/>
         <source>Ethernet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11867"/>
+        <location filename="ui_mesact.py" line="11888"/>
         <source>2 IDC 26 Male</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11804"/>
+        <location filename="ui_mesact.py" line="11825"/>
         <source>7i80D-B25</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11806"/>
+        <location filename="ui_mesact.py" line="11827"/>
         <source>1 DB25M 1 IDC 26M</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11808"/>
+        <location filename="ui_mesact.py" line="11829"/>
         <source>7i98</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11809"/>
+        <location filename="ui_mesact.py" line="11830"/>
         <source>7i92H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11810"/>
+        <location filename="ui_mesact.py" line="11831"/>
         <source>2 IDC 50 Male</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11824"/>
+        <location filename="ui_mesact.py" line="11845"/>
         <source>3 IDC 26 Male</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11813"/>
+        <location filename="ui_mesact.py" line="11834"/>
         <source>7i92M</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11814"/>
+        <location filename="ui_mesact.py" line="11835"/>
         <source>7i80DB-16</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11816"/>
+        <location filename="ui_mesact.py" line="11837"/>
         <source>7i92</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11818"/>
+        <location filename="ui_mesact.py" line="11839"/>
         <source>7i80HD-25</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11826"/>
+        <location filename="ui_mesact.py" line="11847"/>
         <source>4 DB25F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11827"/>
+        <location filename="ui_mesact.py" line="11848"/>
         <source>All in One Cards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11830"/>
+        <location filename="ui_mesact.py" line="11851"/>
         <source>Inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11987"/>
+        <location filename="ui_mesact.py" line="12008"/>
         <source>Step/Dir</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11835"/>
+        <location filename="ui_mesact.py" line="11856"/>
         <source>2 on Inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11838"/>
+        <location filename="ui_mesact.py" line="11859"/>
         <source>24 isolated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11892"/>
+        <location filename="ui_mesact.py" line="11913"/>
         <source>4 on Inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11841"/>
+        <location filename="ui_mesact.py" line="11862"/>
         <source>16 sourcing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11848"/>
+        <location filename="ui_mesact.py" line="11869"/>
         <source>7i95</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11990"/>
+        <location filename="ui_mesact.py" line="12011"/>
         <source>Analog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11889"/>
+        <location filename="ui_mesact.py" line="11910"/>
         <source>6 isolated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12000"/>
+        <location filename="ui_mesact.py" line="12021"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11948"/>
+        <location filename="ui_mesact.py" line="11969"/>
         <source>RS-422</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11859"/>
+        <location filename="ui_mesact.py" line="11880"/>
         <source>MPG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11864"/>
+        <location filename="ui_mesact.py" line="11885"/>
         <source>32 sinking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11865"/>
+        <location filename="ui_mesact.py" line="11886"/>
         <source>Expansion
 Connectors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11894"/>
+        <location filename="ui_mesact.py" line="11915"/>
         <source>1 IDC 26 Male</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11880"/>
+        <location filename="ui_mesact.py" line="11901"/>
         <source>11 isolated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11882"/>
+        <location filename="ui_mesact.py" line="11903"/>
         <source>Pot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11888"/>
+        <location filename="ui_mesact.py" line="11909"/>
         <source>16 isolated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11890"/>
+        <location filename="ui_mesact.py" line="11911"/>
         <source>2 on Analog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11895"/>
+        <location filename="ui_mesact.py" line="11916"/>
         <source>Daughter Cards</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11901"/>
+        <location filename="ui_mesact.py" line="11922"/>
         <source>16
 Isolated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11992"/>
+        <location filename="ui_mesact.py" line="12013"/>
         <source>DB25
 Female</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11909"/>
+        <location filename="ui_mesact.py" line="11930"/>
         <source>7i33</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11970"/>
+        <location filename="ui_mesact.py" line="11991"/>
         <source>IDC 50
 Male</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11940"/>
+        <location filename="ui_mesact.py" line="11961"/>
         <source>32
 sinking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11978"/>
+        <location filename="ui_mesact.py" line="11999"/>
         <source>16
 sourcing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11935"/>
+        <location filename="ui_mesact.py" line="11956"/>
         <source>7i37</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11973"/>
+        <location filename="ui_mesact.py" line="11994"/>
         <source>inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11977"/>
+        <location filename="ui_mesact.py" line="11998"/>
         <source>7i85S</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11982"/>
+        <location filename="ui_mesact.py" line="12003"/>
         <source>8
 Isolated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="11991"/>
+        <location filename="ui_mesact.py" line="12012"/>
         <source>7i89</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="12001"/>
+        <location filename="ui_mesact.py" line="12022"/>
         <source>Board Details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14172"/>
+        <location filename="ui_mesact.py" line="14193"/>
         <source>Get CPU Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14152"/>
+        <location filename="ui_mesact.py" line="14173"/>
         <source>1st</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14170"/>
+        <location filename="ui_mesact.py" line="14191"/>
         <source>Get write.tmax</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14153"/>
+        <location filename="ui_mesact.py" line="14174"/>
         <source>2nd</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14147"/>
+        <location filename="ui_mesact.py" line="14168"/>
         <source>Servo Thread Test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14151"/>
+        <location filename="ui_mesact.py" line="14172"/>
         <source> Get Servo Thread tmax</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14150"/>
+        <location filename="ui_mesact.py" line="14171"/>
         <source>Servo Thread tmax</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14148"/>
+        <location filename="ui_mesact.py" line="14169"/>
         <source>Result</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14175"/>
+        <location filename="ui_mesact.py" line="14196"/>
         <source>PC Test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14154"/>
+        <location filename="ui_mesact.py" line="14175"/>
         <source>Under 70% is good, over 70% try
 increasing Thread Period</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14156"/>
+        <location filename="ui_mesact.py" line="14177"/>
         <source>Packet Time is in units of servo thread period.
 If the Packet Time is greater than 50%
 try increasing the thread period.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14159"/>
+        <location filename="ui_mesact.py" line="14180"/>
         <source>The Ethernet Card must be connected
 and LinuxCNC running this
 configuration before trying to read tMax.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ui_mesact.py" line="14173"/>
+        <location filename="ui_mesact.py" line="14194"/>
         <source>The Default Packet Time Timeout
 is 80% of the Servo Thread Period</source>
         <translation type="unfinished"></translation>
