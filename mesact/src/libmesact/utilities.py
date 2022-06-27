@@ -284,33 +284,31 @@ def updateAxisInfo(parent):
 		getattr(parent, f'{card}_stepRateJoint_' + joint).setText(f'{abs(stepRate):.0f} pulses')
 
 def unitsChanged(parent):
-	if parent.linearUnitsCB.currentData() == 'mm':
-		parent.trajMaxLinVelDSB.setSuffix(' mm/sec')
-		parent.minLinJogVelDSB.setSuffix(' mm/sec')
-		parent.defLinJogVelDSB.setSuffix(' mm/sec')
-		parent.maxLinJogVelDSB.setSuffix(' mm/sec')
-		parent.jogSpeedLB.setText(f'{parent.defLinJogVelDSB.value() * 60} m/min')
-		for i in range(6):
-			getattr(parent, f'c0_unitsLB_{i}').setText('Vel & Acc\nmm/sec')
-		maxVelChanged(parent)
-	if parent.linearUnitsCB.currentData() == 'inch':
-		parent.trajMaxLinVelDSB.setSuffix(' in/sec')
-		parent.minLinJogVelDSB.setSuffix(' in/sec')
-		parent.defLinJogVelDSB.setSuffix(' in/sec')
-		parent.maxLinJogVelDSB.setSuffix(' in/sec')
-		parent.jogSpeedLB.setText(f'{parent.defLinJogVelDSB.value() * 60} in/min')
-		for i in range(6):
-			getattr(parent, f'c0_unitsLB_{i}').setText('Vel & Acc\nin/sec')
-		maxVelChanged(parent)
 	if not parent.linearUnitsCB.currentData():
-		parent.trajMaxLinVelDSB.setSuffix('')
-		parent.minLinJogVelDSB.setSuffix('')
-		parent.defLinJogVelDSB.setSuffix('')
-		parent.maxLinJogVelDSB.setSuffix('')
-		parent.jogSpeedLB.setText('')
+		unitsSecond = ''
+		unitsMinute = ''
 		for i in range(6):
 			getattr(parent, f'c0_unitsLB_{i}').setText('Select Units\nMachine Tab')
-		maxVelChanged(parent)
+		return
+	if parent.linearUnitsCB.currentData() == 'mm':
+		unitsSecond = 'mm/sec'
+		unitsMinute = 'mm/min'
+	elif parent.linearUnitsCB.currentData() == 'inch':
+		unitsSecond = 'in/sec'
+		unitsMinute = 'in/min'
+	for i in range(6):
+		getattr(parent, f'c0_unitsLB_{i}').setText(f'Vel & Acc\n{unitsSecond}')
+	parent.trajMaxLinVelDSB.setSuffix(f' {unitsSecond}')
+	parent.minLinJogVelDSB.setSuffix(f' {unitsSecond}')
+	parent.defLinJogVelDSB.setSuffix(f' {unitsSecond}')
+	parent.maxLinJogVelDSB.setSuffix(f' {unitsSecond}')
+	parent.minLinearVelLB.setText(f'{parent.minLinJogVelDSB.value() * 60:.1f} {unitsMinute}')
+	parent.jogSpeedLB.setText(f'{parent.defLinJogVelDSB.value() * 60:.1f} {unitsMinute}')
+	parent.maxLinearVelLB.setText(f'{parent.maxLinJogVelDSB.value() * 60:.1f} {unitsMinute}')
+	if set('ABC')&set(parent.coordinatesLB.text()): # angular axis
+		parent.defAngularVelLB.setText(f'{parent.defAngJogVelDSB.value() * 60:.1f} deg/min')
+
+	maxVelChanged(parent)
 
 def axisChanged(parent):
 	connector = parent.sender().objectName()[:3]
@@ -318,10 +316,19 @@ def axisChanged(parent):
 	axis = parent.sender().currentText()
 	if axis in ['X', 'Y', 'Z', 'U', 'V', 'W']:
 		getattr(parent, f'{connector}axisType_{joint}').setText('LINEAR')
+		parent.minAngJogVelDSB.setEnabled(False)
+		parent.defAngJogVelDSB.setEnabled(False)
+		parent.maxAngJogVelDSB.setEnabled(False)
 	elif axis in ['A', 'B', 'C']:
 		getattr(parent, f'{connector}axisType_{joint}').setText('ANGULAR')
+		parent.minAngJogVelDSB.setEnabled(True)
+		parent.defAngJogVelDSB.setEnabled(True)
+		parent.maxAngJogVelDSB.setEnabled(True)
 	else:
 		getattr(parent, f'{connector}axisType_{joint}').setText('')
+		parent.minAngJogVelDSB.setEnabled(False)
+		parent.defAngJogVelDSB.setEnabled(False)
+		parent.maxAngJogVelDSB.setEnabled(False)
 	coordList = []
 
 	for i in range(6): # Card 0
@@ -830,6 +837,9 @@ def setup(parent):
 	parent.cardTabs.setTabEnabled(1, False)
 	parent.spindleGB.setEnabled(False)
 	parent.spindlepidGB.setEnabled(False)
+	parent.minAngJogVelDSB.setEnabled(False)
+	parent.defAngJogVelDSB.setEnabled(False)
+	parent.maxAngJogVelDSB.setEnabled(False)
 	pixmap = QPixmap(os.path.join(parent.lib_path, '7i76.png'))
 	parent.card7i76LB.setPixmap(pixmap)
 	pixmap = QPixmap(os.path.join(parent.lib_path, '7i77.png'))
