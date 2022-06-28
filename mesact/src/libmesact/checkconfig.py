@@ -349,6 +349,8 @@ def checkit(parent):
 			if not parent.spindlePwmTypeCB.currentData():
 				tabError = True
 				configErrors.append(f'\tAnalog spindle PWM Type must be selected')
+
+		if parent.spindleFeedbackCB.currentData() == 'encoder':
 			if parent.spindleMaxRpm.value() != parent.maxOutput_s.value():
 				tabError = True
 				configErrors.append(f'\tPID Max Output {parent.maxOutput_s.value()} needs to match Max RPM {parent.spindleMaxRpm.value()}')
