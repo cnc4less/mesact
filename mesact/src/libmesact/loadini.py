@@ -23,7 +23,6 @@ def openini(parent, configName = ''):
 		configName = os.path.splitext(base)[0]
 	else: # we passed a file name
 		configName = configName.replace(' ','_').lower()
-		print(configName)
 		configsDir = os.path.expanduser('~/linuxcnc/configs')
 		iniFile = os.path.join(configsDir, configName, configName + '.ini')
 		if not os.path.isfile(iniFile):
