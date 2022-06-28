@@ -271,7 +271,9 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 
 def main():
 	app = QApplication(sys.argv)
-	if float(f'{sys.version_info[0]}.{sys.version_info[1]}') < 3.6:
+	major = int(f'{sys.version_info[0]}')
+	minor = int(f'{sys.version_info[1]}')
+	if major < 3 or major == 3 and minor < 6:
 		ex = VersionError()
 	else:
 		ex = MainWindow()
