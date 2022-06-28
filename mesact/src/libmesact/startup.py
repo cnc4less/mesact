@@ -1,6 +1,44 @@
 import os, configparser, subprocess
+
+from PyQt5.QtGui import QPixmap
+
 from libmesact import loadini
 from libmesact import utilities
+
+def setup(parent):
+	parent.mainTabs.setTabEnabled(3, False)
+	parent.mainTabs.setTabEnabled(4, False)
+	parent.cardTabs.setTabEnabled(1, False)
+	parent.spindleGB.setEnabled(False)
+	parent.spindlepidGB.setEnabled(False)
+	parent.minAngJogVelDSB.setEnabled(False)
+	parent.defAngJogVelDSB.setEnabled(False)
+	parent.maxAngJogVelDSB.setEnabled(False)
+	parent.spindleStepgenGB.setEnabled(False)
+	pixmap = QPixmap(os.path.join(parent.lib_path, '7i76.png'))
+	parent.card7i76LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.lib_path, '7i77.png'))
+	parent.card7i77LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i33-card.png'))
+	parent.card7i33LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i37-card.png'))
+	parent.card7i37LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i47-card.png'))
+	parent.card7i47LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i48-card.png'))
+	parent.card7i48LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i76-card.png'))
+	parent.card7i76LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i77-card.png'))
+	parent.card7i77LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i78-card.png'))
+	parent.card7i78LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i85-card.png'))
+	parent.card7i85LB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i85s-card.png'))
+	parent.card7i85sLB.setPixmap(pixmap)
+	pixmap = QPixmap(os.path.join(parent.image_path, '7i88-card.png'))
+	parent.card7i88LB.setPixmap(pixmap)
 
 def checkconfig(parent):
 	config = configparser.ConfigParser()
@@ -13,7 +51,6 @@ def checkconfig(parent):
 		if config.has_option('STARTUP', 'CONFIG'):
 			if config['STARTUP']['CONFIG'] != 'False':
 				loadini.openini(parent, config['STARTUP']['CONFIG'].lower())
-				#loadini.openini(self, 'mesa-5i25-7i76')
 
 	else:
 		print(f'{os.path.expanduser("~/.config/measct/mesact.conf")} not found')

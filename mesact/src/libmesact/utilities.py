@@ -4,7 +4,6 @@ from functools import partial
 from datetime import datetime
 
 from PyQt5.QtWidgets import QMessageBox, QApplication
-from PyQt5.QtGui import QPixmap
 
 from libmesact import firmware
 
@@ -501,7 +500,7 @@ def spindleChanged(parent):
 	else:
 		if parent.spindleTypeCB.currentData() == 'analog':
 			parent.spindleGB.setEnabled(True)
-			parent.spindlepidGB.setEnabled(True)
+			parent.spindlepidGB.setEnabled(False)
 			parent.spindleStepgenGB.setEnabled(False)
 			for i in range(parent.axes):
 				parent.jointTabs_0.setTabEnabled(i, True)
@@ -539,14 +538,14 @@ def spindleSettingsChanged(parent):
 
 
 def spindleFeedbackChanged(parent):
-	pass
-	'''
 	if parent.spindleFeedbackCB.currentData() == 'encoder':
-		parent.encoderGB.setEnabled(True)
-		#parent.spindlepidGB.setEnabled(True)
+		parent.spindlepidGB.setEnabled(True)
 	else:
+		parent.spindlepidGB.setEnabled(False)
+
+	'''
+		parent.encoderGB.setEnabled(True)
 		parent.encoderGB.setEnabled(False)
-		#parent.spindlepidGB.setEnabled(False)
 	'''
 ''' left over from 7i96 tool
 def spindleTypeChanged(parent): 
@@ -831,17 +830,4 @@ def add_menu(data, menu_obj):
 		action = menu_obj.addAction(data)
 		action.setIconVisibleInMenu(False)
 
-def setup(parent):
-	parent.mainTabs.setTabEnabled(3, False)
-	parent.mainTabs.setTabEnabled(4, False)
-	parent.cardTabs.setTabEnabled(1, False)
-	parent.spindleGB.setEnabled(False)
-	parent.spindlepidGB.setEnabled(False)
-	parent.minAngJogVelDSB.setEnabled(False)
-	parent.defAngJogVelDSB.setEnabled(False)
-	parent.maxAngJogVelDSB.setEnabled(False)
-	pixmap = QPixmap(os.path.join(parent.lib_path, '7i76.png'))
-	parent.card7i76LB.setPixmap(pixmap)
-	pixmap = QPixmap(os.path.join(parent.lib_path, '7i77.png'))
-	parent.card7i77LB.setPixmap(pixmap)
 

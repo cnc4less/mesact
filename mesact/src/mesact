@@ -88,14 +88,12 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.timer=QTimer()
 		buildcombos.build(self)
 		buildmenus.build(self)
-		utilities.setup(self)
-		#utilities.checks(self)
 		self.helpInfo = helptext.descriptions
-
 		self.extcmd = extcmd.extcmd()
 		#self.ladderOptionsList = utilities.plcOptions()
 		self.setupConnections()
 		self.show()
+		startup.setup(self)
 		startup.checkconfig(self)
 
 	def setupConnections(self):
