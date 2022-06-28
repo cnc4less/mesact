@@ -157,6 +157,21 @@ def build(parent):
 					contents.append(f'net remote-estop estop-latch.0.fault-in <= hm2_7i92.0.gpio.{i:03}.in{invert}\n\n')
 		'''
 
+		output_dict = {
+		'Coolant Flood': 'net flood-output iocontrol.0.coolant-flood => ',
+		'Coolant Mist': 'net mist-output iocontrol.0.coolant-mist => ',
+		'Spindle On': 'net spindle-on spindle.0.on => ',
+		'Spindle CW': 'net spindle-cw spindle.0.forward => ',
+		'Spindle CCW': 'net spindle-ccw spindle.0.reverse => ',
+		'Spindle Brake': 'net spindle-brake spindle.0.brake => ',
+		'E-Stop Out': 'net estop-loopback => ',
+		'Digital Out 0': 'net digital-out-0 motion.digital-out-00 => ',
+		'Digital Out 1': 'net digital-out-1 motion.digital-out-01 => ',
+		'Digital Out 2': 'net digital-out-2 motion.digital-out-02 => ',
+		'Digital Out 3': 'net digital-out-3 motion.digital-out-03 => '
+		}
+
+
 		if ssCard == '7i64':
 			inputs = 24
 			outputs = 24
@@ -192,12 +207,14 @@ def build(parent):
 		if ssCard != '7i73' and board in combiBoards:
 			for i in range(inputs):
 				if getattr(parent, f'ss{ssCard}in_' + str(i)).text() != 'Select':
-					inPin = getattr(parent, f'ss{ssCard}in_' + str(i)).text()
-					contents.append(f'net ss{ssCard}in_{i} hm2_{board}.0.{ssCard}.0.0.input-{i:02} <= {inPin}\n')
+					key = getattr(parent, f'ss{ssCard}in_' + str(i)).text()
+					contents.append(f'{input_dict[key]} hm2_{board}.0.{ssCard}.0.0.input-{i:02}\n')
 			for i in range(outputs):
 				if getattr(parent, f'ss{ssCard}out_' + str(i)).text() != 'Select':
-					outPin = getattr(parent, f'ss{ssCard}out_' + str(i)).text()
-					contents.append(f'net ss{ssCard}out_{i} hm2_{board}.0.{ssCard}.0.0.output-{i:02} => {outPin}\n')
+
+					key = getattr(parent, f'ss{ssCard}out_' + str(i)).text()
+					if output_dict.get(key, False): # return False if key is not in dictionary
+						contents.append(f'{output_dict[key]} hm2_{board}.0.{ssCard}.0.0.output-{i:02}\n')
 
 		elif ssCard == '7i73':
 			for i in range(16):
