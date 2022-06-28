@@ -248,6 +248,22 @@ def build(parent):
 			# hm2_7i96s.0.stepgen.04.velocity-cmd
 
 	if parent.spindleFeedbackCB.currentData() == 'encoder':
+		encoder00 = ['7i96', '7i96s']
+		if board in encoder00:
+			halContents.append('# Encoder Setup\n')
+			halContents.append(f'setp hm2_{board}.0.encoder.00.counter-mode 0\n')
+			halContents.append(f'setp hm2_{board}.0.encoder.00.filter 1\n')
+			halContents.append(f'setp hm2_{board}.0.encoder.00.index-invert 0\n')
+			halContents.append(f'setp hm2_{board}.0.encoder.00.index-mask 0\n')
+			halContents.append(f'setp hm2_{board}.0.encoder.00.index-mask-invert 0\n')
+			halContents.append(f'setp hm2_{board}.0.encoder.00.scale [SPINDLE]SCALE\n')
+		'''
+
+		net spindle-revs             <=   hm2_7i96s.0.encoder.00.position
+		net spindle-vel-fb-rps       <=   hm2_7i96s.0.encoder.00.velocity
+		net spindle-vel-fb-rpm       <=   hm2_7i96s.0.encoder.00.velocity-rpm
+		net spindle-index-enable     <=>  hm2_7i96s.0.encoder.00.index-enable
+		'''
 		s = pids - 1
 		halContents.append(f'setp pid.{s}.Pgain [SPINDLE]P\n')
 		halContents.append(f'setp pid.{s}.Igain [SPINDLE]I\n')
