@@ -44,19 +44,19 @@ def openini(parent, configName = ''):
 		if config.has_option('MESA', 'VERSION'):
 			iniVersion = config['MESA']['VERSION']
 			if iniVersion == parent.version:
-				loadini(parent, iniFile)
+				loadini(parent, iniFile, config)
 			else:
 				msg = (f'The ini file version is {iniVersion}\n'
 					f'The Configuration Tool version is {parent.version}\n'
 					'Try and open the ini?')
 				if parent.errorMsg(msg, 'Version Difference'):
-					loadini(parent, iniFile)
+					loadini(parent, iniFile, config)
 		else:
 			msg = ('This ini was not created with the\n'
 				'Mesa Configuration Tool!')
 			parent.errorMsgOk(msg, 'Incompatable File')
 
-def loadini(parent, iniFile):
+def loadini(parent, iniFile, config):
 	# Section, Item, Object Name
 	iniList = []
 	iniList.append(['MESA', 'BOARD', 'boardCB'])
@@ -179,7 +179,6 @@ def loadini(parent, iniFile):
 	iniList.append(['OPTIONS', 'LADDER', 'ladderGB'])
 	iniList.append(['OPTIONS', 'LADDER_RUNGS', 'ladderRungsSB'])
 	iniList.append(['OPTIONS', 'BACKUP', 'backupCB'])
-	iniList.append(['SSERIAL', 'SS_CARD', 'ssCardCB'])
 
 #iniList.append(['', '', ''])
 	# iniList section, item, value
@@ -216,7 +215,7 @@ def loadini(parent, iniFile):
 	parent.machinePTE.appendPlainText(f'{iniFile} Loaded')
 
 	if config.has_section('SSERIAL'):
-		card = config.get('SSERIAL', 'ssCardCB')
+		card = config.get('SSERIAL', 'SS_CARD')
 		index = parent.ssCardCB.findText(card)
 		if index > 0:
 			parent.ssCardCB.setCurrentIndex(index)
