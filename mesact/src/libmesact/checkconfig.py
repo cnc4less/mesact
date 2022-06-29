@@ -354,6 +354,9 @@ def checkit(parent):
 			if parent.spindleMaxRpm.value() != parent.maxOutput_s.value():
 				tabError = True
 				configErrors.append(f'\tPID Max Output {parent.maxOutput_s.value()} needs to match Max RPM {parent.spindleMaxRpm.value()}')
+			if parent.spindleEncoderScale.value() == 0:
+				tabError = True
+				configErrors.append(f'\tEncoder Scale {parent.spindleEncoderScale.value()} needs to greater than 0')
 
 		#print(parent.spindleTypeCB.currentData()[:7])
 		if parent.spindleTypeCB.currentData()[:7] == 'stepgen':
