@@ -1,3 +1,9 @@
+mesact (0.7.0) unstable; urgency=medium
+
+  * Fix Desktop categories
+
+ -- John Thornton <jt@gnipsel.com>  Thu, 30 Jun 2022 07:14:03 -0500
+
 mesact (0.6.5) unstable; urgency=medium
 
   * Finish Smart Serial Card Support
