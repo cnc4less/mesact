@@ -56,13 +56,15 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		super().__init__()
 		self.setupUi(self) # needed to load Ui_MainWindow
 		self.trans = QtCore.QTranslator(self)
+		print(os.path.split(sys.argv[0])[0])
+		# /home/john/github/mesact/mesact/src
 		if os.path.split(sys.argv[0])[0] == '/usr/bin':
 			self.lib_path = '/usr/lib/libmesact'
 			self.firmware_path = '/usr/lib/libmesact'
 			self.image_path = '/usr/lib/libmesact'
 			self.docs_path = '/usr/lib/libmesact'
-
-		if os.path.split(sys.argv[0])[0] == '.':
+		else:
+		#if os.path.split(sys.argv[0])[0] == '.':
 			srcPath = os.path.split(os.path.realpath(sys.argv[0]))[0]
 			self.lib_path = os.path.join(srcPath, 'libmesact')
 			self.firmware_path = os.path.join(srcPath, 'firmware')
