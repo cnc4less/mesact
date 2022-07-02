@@ -363,9 +363,9 @@ def maxVelChanged(parent):
 	if parent.trajMaxLinVelDSB.value() > 0:
 		val = parent.trajMaxLinVelDSB.value()
 		if parent.linearUnitsCB.currentData() == 'mm':
-			parent.mlvPerMinLB.setText(F'{val * 60} mm/min')
+			parent.mlvPerMinLB.setText(F'{val * 60:.1f} mm/min')
 		if parent.linearUnitsCB.currentData() == 'inch':
-			parent.mlvPerMinLB.setText(F'{val * 60} in/min')
+			parent.mlvPerMinLB.setText(F'{val * 60:.1f} in/min')
 	else:
 		parent.mlvPerMinLB.setText('')
 
