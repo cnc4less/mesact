@@ -250,36 +250,45 @@ def build(parent):
 	if parent.spindleFeedbackCB.currentData() == 'encoder':
 		encoder00 = ['7i96', '7i96s']
 		if board in encoder00:
+			s = pids - 1
+			halContents.append('# PID Setup\n')
+			halContents.append(f'setp pid.{s}.Pgain [SPINDLE]P\n')
+			halContents.append(f'setp pid.{s}.Igain [SPINDLE]I\n')
+			halContents.append(f'setp pid.{s}.Dgain [SPINDLE]D\n')
+			halContents.append(f'setp pid.{s}.bias [SPINDLE]BIAS\n')
+			halContents.append(f'setp pid.{s}.FF0 [SPINDLE]FF0\n')
+			halContents.append(f'setp pid.{s}.FF1 [SPINDLE]FF1\n')
+			halContents.append(f'setp pid.{s}.FF2 [SPINDLE]FF2\n')
+			halContents.append(f'setp pid.{s}.deadband [SPINDLE]DEADBAND\n')
+			halContents.append(f'setp pid.{s}.maxoutput [SPINDLE]MAX_OUTPUT\n')
+			halContents.append(f'setp pid.{s}.error-previous-target true\n')
+
 			halContents.append('# Encoder Setup\n')
 			halContents.append(f'setp hm2_{board}.0.encoder.00.counter-mode 0\n')
 			halContents.append(f'setp hm2_{board}.0.encoder.00.filter 1\n')
 			halContents.append(f'setp hm2_{board}.0.encoder.00.index-invert 0\n')
 			halContents.append(f'setp hm2_{board}.0.encoder.00.index-mask 0\n')
 			halContents.append(f'setp hm2_{board}.0.encoder.00.index-mask-invert 0\n')
-			halContents.append(f'setp hm2_{board}.0.encoder.00.scale [SPINDLE]SCALE\n')
-		'''
+			halContents.append(f'setp hm2_{board}.0.encoder.00.scale [SPINDLE]ENCODER_SCALE\n')
 
-		net spindle-revs             <=   hm2_7i96s.0.encoder.00.position
-		net spindle-vel-fb-rps       <=   hm2_7i96s.0.encoder.00.velocity
-		net spindle-vel-fb-rpm       <=   hm2_7i96s.0.encoder.00.velocity-rpm
-		net spindle-index-enable     <=>  hm2_7i96s.0.encoder.00.index-enable
-		'''
-		s = pids - 1
-		halContents.append(f'setp pid.{s}.Pgain [SPINDLE]P\n')
-		halContents.append(f'setp pid.{s}.Igain [SPINDLE]I\n')
-		halContents.append(f'setp pid.{s}.Dgain [SPINDLE]D\n')
-		halContents.append(f'setp pid.{s}.bias [SPINDLE]BIAS\n')
-		halContents.append(f'setp pid.{s}.FF0 [SPINDLE]FF0\n')
-		halContents.append(f'setp pid.{s}.FF1 [SPINDLE]FF1\n')
-		halContents.append(f'setp pid.{s}.FF2 [SPINDLE]FF2\n')
-		halContents.append(f'setp pid.{s}.deadband [SPINDLE]DEADBAND\n')
-		halContents.append(f'setp pid.{s}.maxoutput [SPINDLE]MAX_OUTPUT\n')
-		halContents.append(f'setp pid.{s}.error-previous-target true\n')
-		halContents.append(f'net spindle-index-enable <=> pid.{s}.index-enable\n')
-		halContents.append(f'net spindle-enable pid.{s}.enable\n')
-		halContents.append(f'net spindle-vel-cmd-rpm => pid.{s}.command\n')
-		halContents.append(f'net spindle-vel-fb-rpm => pid.{s}.feedback\n')
-		halContents.append(f'net spindle-output <= pid.{s}.output\n')
+			halContents.append(f'\nnet spindle-index-enable <=> pid.{s}.index-enable\n')
+			halContents.append(f'net spindle-index-enable <=> hm2_{board}.0.encoder.00.index-enable\n')
+			halContents.append('net spindle-index-enable <=> spindle.0.index-enable\n')
+
+			halContents.append(f'\nspindle-vel-cmd-rpm => pid.{s}.command\n')
+			halContents.append(f'spindle-vel-cmd-rpm <= spindle.0.speed-out\n')
+
+			halContents.append(f'\nnet spindle-vel-fb-rpm => pid.{s}.feedback\n')
+			halContents.append(f'net spindle-vel-fb-rpm <= hm2_{board}.0.encoder.00.velocity-rpm\n')
+
+			#halContents.append(f'\nnet spindle-output <= pid.{s}.output\n')
+
+			halContents.append(f'\nnet spindle-enable => pid.{s}.enable\n')
+			halContents.append('net spindle-enable <= spindle.0.on\n')
+
+			# for encoder feedback spindle at speed should use encoder speed
+			halContents.append('sets spindle-at-speed true\n')
+
 
 	externalEstop = False
 	for i in range(6): # test for an external e stop input

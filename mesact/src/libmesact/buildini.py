@@ -245,7 +245,6 @@ def build(parent):
 			iniContents.append(f'MIN_RPM = {parent.spindleMinRpm.value()}\n')
 
 		if parent.spindleFeedbackCB.currentData() == 'encoder':
-			iniContents.append(f'SCALE = {parent.spindleEncoderScale.value()}\n')
 			iniContents.append(f'P = {parent.p_s.value()}\n')
 			iniContents.append(f'I = {parent.i_s.value()}\n')
 			iniContents.append(f'D = {parent.d_s.value()}\n')
@@ -257,6 +256,7 @@ def build(parent):
 			iniContents.append(f'MAX_ERROR = {parent.maxError_s.value()}\n')
 			iniContents.append(f'MAX_OUTPUT = {parent.maxOutput_s.value()}\n')
 			iniContents.append(f'OUTPUT_TYPE = {parent.maxOutput_s.value()}\n')
+			iniContents.append(f'ENCODER_SCALE = {parent.spindleEncoderScale.value()}\n')
 
 		if parent.spindleTypeCB.currentData()[:7] == 'stepgen':
 			iniContents.append(f'DRIVE = {parent.spindleDriveCB.currentText()}\n')
