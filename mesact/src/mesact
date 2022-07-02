@@ -97,7 +97,7 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		startup.checkconfig(self)
 
 	def setupConnections(self):
-		# Machine Tab
+
 		# Menu Items
 		self.actionEnglish.triggered.connect(partial(self.change_language, None))
 		self.actionGerman.triggered.connect(partial(self.change_language, 'eng-de'))
@@ -112,7 +112,7 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.actionDocuments.triggered.connect(partial(updates.showDocs, self, 'mesact.pdf'))
 		self.timer.timeout.connect(partial(updates.clearProgressBar, self))
 
-		# Machine Group
+		# Machine Tab
 		self.configName.textChanged[str].connect(partial(utilities.configNameChanged, self))
 		self.linearUnitsCB.currentIndexChanged.connect(partial(utilities.unitsChanged, self))
 		self.trajMaxLinVelDSB.valueChanged.connect(partial(utilities.maxVelChanged, self))
@@ -120,10 +120,8 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		for i in range(2):
 			getattr(self, f'daughterCB_{i}').currentIndexChanged.connect(partial(utilities.daughterCardChanged, self))
 
-		# Board Group
 		self.checkBoardPB.clicked.connect(partial(card.checkCard, self))
 
-		# Firmware Group
 		self.firmwareCB.currentIndexChanged.connect(partial(utilities.firmwareChanged, self))
 		self.readpdPB.clicked.connect(partial(card.readpd, self))
 		self.readhmidPB.clicked.connect(partial(card.readhmid, self))
@@ -139,6 +137,13 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.minAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
 		self.defAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
 		self.maxAngJogVelDSB.valueChanged.connect(partial(utilities.unitsChanged, self))
+
+		# Info Tab
+		self.OpenManPB_0.clicked.connect(partial(updates.showDocs, self, self.mainBoardDocsCB))
+		self.OpenManPB_1.clicked.connect(partial(updates.showDocs, self, self.comboBoardDocsCB))
+		self.OpenManPB_2.clicked.connect(partial(updates.showDocs, self, self.dauCardDocsCB))
+		self.OpenManPB_3.clicked.connect(partial(updates.showDocs, self, self.ssCardDocsCB))
+		self.OpenManPB_4.clicked.connect(partial(updates.showDocs, self, self.otherDocsCB))
 
 		# Axes Tab
 		for i in range(6):
@@ -156,12 +161,6 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		for i in range(32):
 			getattr(self, f'inputInvertCB_{i}').stateChanged.connect(partial(utilities.inputChanged, self))
 			getattr(self, f'inputDebounceCB_{i}').stateChanged.connect(partial(utilities.inputChanged, self))
-
-		self.OpenManPB_0.clicked.connect(partial(updates.showDocs, self, self.mainBoardDocsCB))
-		self.OpenManPB_1.clicked.connect(partial(updates.showDocs, self, self.comboBoardDocsCB))
-		self.OpenManPB_2.clicked.connect(partial(updates.showDocs, self, self.dauCardDocsCB))
-		self.OpenManPB_3.clicked.connect(partial(updates.showDocs, self, self.ssCardDocsCB))
-		self.OpenManPB_4.clicked.connect(partial(updates.showDocs, self, self.otherDocsCB))
 
 		# Spindle Tab
 		self.pidDefault_s.clicked.connect(partial(utilities.pidSetDefault, self))
