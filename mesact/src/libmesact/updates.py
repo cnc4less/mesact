@@ -62,10 +62,14 @@ def clearProgressBar(parent):
 	parent.machinePTE.appendPlainText('Close the Configuration Tool and reinstall')
 
 def showDocs(parent, pdfDoc):
-	if pdfDoc.currentData():
-		if isinstance(pdfDoc, QComboBox):
+	docPath = False
+	if isinstance(pdfDoc, str):
+		docPath = os.path.join(parent.docs_path, pdfDoc)
+	elif isinstance(pdfDoc, QComboBox):
+		if pdfDoc.currentData():
 			docPath = os.path.join(parent.docs_path, pdfDoc.currentData())
 		else:
-			docPath = os.path.join(parent.docs_path, pdfDoc)
+			parent.errorMsgOk('Select a Manual First!', 'Error')
+	if docPath:
 		subprocess.call(('xdg-open', docPath))
 
