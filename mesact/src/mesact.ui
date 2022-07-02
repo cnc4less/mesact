@@ -27951,6 +27951,30 @@ is 80% of the Servo Thread Period</string>
             </property>
            </widget>
           </widget>
+          <widget class="QWidget" name="tab_32">
+           <attribute name="title">
+            <string>Ethernet</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_193">
+            <item row="0" column="0">
+             <widget class="QPlainTextEdit" name="ethernetPTE">
+              <property name="plainText">
+               <string>1. Remove any PCI or USB NIC's
+2. Open a terminal and type in ip link show
+3. Find the ID of the NIC something like enp2s0
+4. In a terminal edit /etc/network/interfaces with sudo nano /etc/network/interfaces
+5. Add the following using your NIC ID
+auto enp2s0
+      iface enp2s0 inet static
+          address 10.10.10.11
+          netmask 255.255.255.0
+6. Ctrl X, Yes, Enter
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
          </widget>
         </item>
        </layout>
