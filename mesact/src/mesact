@@ -56,14 +56,12 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		super().__init__()
 		self.setupUi(self) # needed to load Ui_MainWindow
 		self.trans = QtCore.QTranslator(self)
-		# /home/john/github/mesact/mesact/src
 		if os.path.split(sys.argv[0])[0] == '/usr/bin':
 			self.lib_path = '/usr/lib/libmesact'
 			self.firmware_path = '/usr/lib/libmesact'
 			self.image_path = '/usr/lib/libmesact'
 			self.docs_path = '/usr/lib/libmesact'
 		else:
-		#if os.path.split(sys.argv[0])[0] == '.':
 			srcPath = os.path.split(os.path.realpath(sys.argv[0]))[0]
 			self.lib_path = os.path.join(srcPath, 'libmesact')
 			self.firmware_path = os.path.join(srcPath, 'firmware')
@@ -75,8 +73,6 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.setWindowTitle(f'Mesa Configuration Tool Version {self.version}')
 		self.progressBar = QProgressBar()
 		self.statusBar().addPermanentWidget(self.progressBar)
-		#self.progressBar.setGeometry(30, -10, 200, 35) does nothing
-		#self.progressBar.setValue(50)
 		self.board = '' # main board
 		self.card = '' # daughter card
 		self.boardType = '' # pci or eth
@@ -91,7 +87,7 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		buildmenus.build(self)
 		self.helpInfo = helptext.descriptions
 		self.extcmd = extcmd.extcmd()
-		#self.ladderOptionsList = utilities.plcOptions()
+		self.ladderOptionsList = utilities.plcOptions()
 		self.setupConnections()
 		self.show()
 		startup.setup(self)
@@ -189,7 +185,6 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.calculateServoPB.clicked.connect(partial(pcinfo.calcServoPercent, self))
 
 	def change_language(self, translationFile = None):
-		#print(self.sender().text())
 		if translationFile is not None:
 			self.trans.load(os.path.join(self.lib_path, translationFile))
 			QtWidgets.QApplication.instance().installTranslator(self.trans)
@@ -248,11 +243,6 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		print(f"File {filename} line {line_no}, in {name}")
 		print(f'{traceback.format_exception(exception_type, exception_value, tb)}')
 		error = traceback.format_exception(exception_type, exception_value, tb)[0].split(None, 1)[1]
-		#print(error)
-		#print(f'exception_type: {exception_type}')
-		#print(f'exception_value: {exception_value}')
-		#print(f'exception_traceback: {tb.tb_lineno}')
-		#print(f'format_exception: {traceback.format_exception(exception_type, exception_value, exception_traceback)[1]}')
 		msg = (f'A Program Error Occurred in {filename} line {line_no}\n'
 		f'{error}\n'
 		'Please file an issue.')
