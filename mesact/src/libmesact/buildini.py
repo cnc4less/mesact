@@ -165,7 +165,6 @@ def build(parent):
 	card = 'c0'
 	# build the [JOINT_n] sections
 	for i in range(6):
-		#print(getattr(parent, f'{card}_axisCB_{i}').currentData())
 		if getattr(parent, f'{card}_axisCB_{i}').currentData():
 			iniContents.append(f'\n[JOINT_{i}]\n')
 			iniContents.append(f'AXIS = {getattr(parent, f"{card}_axisCB_{i}").currentData()}\n')
@@ -231,15 +230,11 @@ def build(parent):
 
 	# build the [SPINDLE] section if enabled
 	if parent.spindleTypeCB.currentData():
-		#print(parent.spindleTypeCB.currentData())
 		iniContents.append('\n[SPINDLE]\n')
 		iniContents.append(f'SPINDLE_TYPE = {parent.spindleTypeCB.currentData()}\n')
 		if parent.spindlePwmTypeCB.currentData():
 			iniContents.append(f'SPINDLE_PWM_TYPE = {parent.spindlePwmTypeCB.currentData()}\n')
-		#pwmTypeCB
-		#pwmgen.00.output_type
 		if parent.spindleTypeCB.currentData() == 'analog':
-			#print(parent.spindleCB.currentData())
 			iniContents.append(f'PWM_FREQUENCY = {parent.pwmFrequencySB.value()}\n')
 			iniContents.append(f'MAX_RPM = {parent.spindleMaxRpm.value()}\n')
 			iniContents.append(f'MIN_RPM = {parent.spindleMinRpm.value()}\n')
