@@ -208,7 +208,7 @@ def build(parent):
 		halContents.append('net spindle-vel-cmd-rpm <= spindle.0.speed-out\n')
 		halContents.append('net spindle-vel-cmd-rpm-abs <= spindle.0.speed-out-abs\n')
 		halContents.append('\n# Spindle Command Pins\n')
-		halContents.append('net spindle-on <= spindle.0.on\n')
+		halContents.append('net spindle-enable <= spindle.0.on\n')
 		halContents.append('net spindle-cw <= spindle.0.forward\n')
 		halContents.append('net spindle-ccw <= spindle.0.reverse\n')
 		halContents.append('net spindle-brake <= spindle.0.brake\n')
@@ -275,8 +275,8 @@ def build(parent):
 			halContents.append(f'net spindle-index-enable <=> hm2_{board}.0.encoder.00.index-enable\n')
 			halContents.append('net spindle-index-enable <=> spindle.0.index-enable\n')
 
-			halContents.append(f'\nspindle-vel-cmd-rpm => pid.{s}.command\n')
-			halContents.append(f'spindle-vel-cmd-rpm <= spindle.0.speed-out\n')
+			halContents.append(f'\nnet spindle-vel-cmd-rpm => pid.{s}.command\n')
+			halContents.append(f'net spindle-vel-cmd-rpm <= spindle.0.speed-out\n')
 
 			halContents.append(f'\nnet spindle-vel-fb-rpm => pid.{s}.feedback\n')
 			halContents.append(f'net spindle-vel-fb-rpm <= hm2_{board}.0.encoder.00.velocity-rpm\n')
@@ -284,7 +284,6 @@ def build(parent):
 			#halContents.append(f'\nnet spindle-output <= pid.{s}.output\n')
 
 			halContents.append(f'\nnet spindle-enable => pid.{s}.enable\n')
-			halContents.append('net spindle-enable <= spindle.0.on\n')
 
 			# for encoder feedback spindle at speed should use encoder speed
 			halContents.append('sets spindle-at-speed true\n')

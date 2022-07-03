@@ -245,6 +245,7 @@ def build(parent):
 			iniContents.append(f'MIN_RPM = {parent.spindleMinRpm.value()}\n')
 
 		if parent.spindleFeedbackCB.currentData() == 'encoder':
+			iniContents.append(f'FEEDBACK = {parent.spindleFeedbackCB.currentData()}\n')
 			iniContents.append(f'P = {parent.p_s.value()}\n')
 			iniContents.append(f'I = {parent.i_s.value()}\n')
 			iniContents.append(f'D = {parent.d_s.value()}\n')

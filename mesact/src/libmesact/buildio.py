@@ -187,7 +187,7 @@ def build(parent):
 	output_dict = {
 	'Coolant Flood': 'net flood-output iocontrol.0.coolant-flood => ',
 	'Coolant Mist': 'net mist-output iocontrol.0.coolant-mist => ',
-	'Spindle On': 'net spindle-on spindle.0.on => ',
+	'Spindle On': 'net spindle-on => ',
 	'Spindle CW': 'net spindle-cw spindle.0.forward => ',
 	'Spindle CCW': 'net spindle-ccw spindle.0.reverse => ',
 	'Spindle Brake': 'net spindle-brake spindle.0.brake => ',
