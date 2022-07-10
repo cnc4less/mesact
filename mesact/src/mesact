@@ -9,7 +9,7 @@ you can configure the daughter card, but not the 7i97, which, is weird.
 Store Connector used for building config
 
 """
-VERSION = '0.6.5'
+VERSION = '0.7.0'
 
 import sys, os, traceback
 from functools import partial
@@ -19,6 +19,7 @@ from PyQt5 import QtCore, uic, QtWidgets
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QMessageBox,
 	QDialog, qApp, QProgressBar)
 from PyQt5.QtGui import QPixmap
+from PyQt5 import uic
 
 from libmesact.ui_mesact import Ui_mainWindow
 from libmesact import startup
@@ -37,7 +38,7 @@ from libmesact import updates
 from libmesact import helptext
 from libmesact.help import Ui_Dialog as helpDialog
 from libmesact.about import Ui_about as aboutDialog
-from libmesact.ui_mesact import Ui_mainWindow
+#from libmesact.ui_mesact import Ui_mainWindow < for Translations
 
 class VersionError(QMainWindow):
 	def __init__(self):
@@ -51,22 +52,25 @@ class VersionError(QMainWindow):
 		msgBox.exec()
 		sys.exit()
 
-class MainWindow(QMainWindow, Ui_mainWindow):
+#class MainWindow(QMainWindow, Ui_mainWindow): < for Translations
+class MainWindow(QMainWindow):
 	def __init__(self):
 		super().__init__()
-		self.setupUi(self) # needed to load Ui_MainWindow
-		self.trans = QtCore.QTranslator(self)
+		#self.setupUi(self) # needed to load Ui_MainWindow < for Translations
+		#self.trans = QtCore.QTranslator(self) < for Translations
 		if os.path.split(sys.argv[0])[0] == '/usr/bin':
 			self.lib_path = '/usr/lib/libmesact'
 			self.firmware_path = '/usr/lib/libmesact'
 			self.image_path = '/usr/lib/libmesact'
 			self.docs_path = '/usr/lib/libmesact'
+			uic.loadUi(os.path.join(self.lib_path, 'mesact.ui'), self)
 		else:
 			srcPath = os.path.split(os.path.realpath(sys.argv[0]))[0]
 			self.lib_path = os.path.join(srcPath, 'libmesact')
 			self.firmware_path = os.path.join(srcPath, 'firmware')
 			self.image_path = os.path.join(srcPath, 'images')
 			self.docs_path = os.path.join(srcPath, 'manuals')
+			uic.loadUi(os.path.join(srcPath, 'mesact.ui'), self)
 		sys.excepthook = self.excepthook
 		self.version = VERSION
 		self.emcVersion = '1.1'
@@ -96,6 +100,7 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 	def setupConnections(self):
 
 		# Menu Items
+		# for Translations
 		self.actionEnglish.triggered.connect(partial(self.change_language, None))
 		self.actionGerman.triggered.connect(partial(self.change_language, 'eng-de'))
 		self.actionFrench.triggered.connect(partial(self.change_language, 'eng-fr'))
@@ -185,6 +190,15 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		self.calculateServoPB.clicked.connect(partial(pcinfo.calcServoPercent, self))
 
 	def change_language(self, translationFile = None):
+		text = ('After spending hundreds of hours figuring out translations.\n'
+						'Nothing has been translated in over four months\n'
+						'\nTranslations increase my workload so if nothing is going\n'
+						'to be translated it is not worth the extra effort on my part.\n'
+						'\nIf you want to translate this tool to your language\n'
+						'leave an issue at:\n'
+						'https://github.com/jethornton/mesact/issues')
+		self.errorMsgOk(text, 'Translations are Disabled')
+		'''
 		if translationFile is not None:
 			self.trans.load(os.path.join(self.lib_path, translationFile))
 			QtWidgets.QApplication.instance().installTranslator(self.trans)
@@ -192,7 +206,8 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 		else:
 			QtWidgets.QApplication.instance().removeTranslator(self.trans)
 			self.retranslateUi(self)
-
+	'''
+	
 	def errorMsg(self, text, title=None):
 		msgBox = QMessageBox()
 		msgBox.setIcon(QMessageBox.Warning)
