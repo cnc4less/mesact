@@ -1,15 +1,12 @@
 Basic Usage
 ===========
 
-You can left click Check Config to see if there are any errors at any
-time.
+You can left click Check Config at any time to see if there are any errors.
 
 Build Config will check for errors before build the configuration files.
 
 Machine Tab
 -----------
-
-#. Select the Board used
 
 #. Enter a Configuration Name
 
@@ -17,9 +14,13 @@ Machine Tab
 
 #. Select Max Linear Velocity
 
-#. If you have a Board and a Daughter card select a firmware
+#. Select the Mesa Board
 
-#. If you have a Daughter card select it on the lower box
+#. Ethernet Boards you must select the IP Address 10.10.10.10 is recommened.
+
+#. Boards like 5i25/6i25, 7i80, 7i92, 7i93, 7i98 to enable the Axes Tab
+   and the I/O Tab you need to select a firmware then select a daughter card.
+
 
 Display Tab
 -----------

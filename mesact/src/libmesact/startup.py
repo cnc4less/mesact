@@ -48,14 +48,20 @@ def checkconfig(parent):
 			if config['NAGS']['MESAFLASH'] == 'True':
 				parent.checkMesaflashCB.setChecked(True)
 				checkmf(parent)
+		if config.has_option('NAGS', 'NEWUSER'):
+			if config['NAGS']['NEWUSER'] == 'True':
+				parent.newUserCB.setChecked(True)
 		if config.has_option('STARTUP', 'CONFIG'):
 			if config['STARTUP']['CONFIG'] != 'False':
 				loadini.openini(parent, config['STARTUP']['CONFIG'].lower())
 
-	else:
+	else: # no mesact.conf file found set defaults
 		print(f'{os.path.expanduser("~/.config/measct/mesact.conf")} not found')
 		config.add_section('NAGS')
 		config['NAGS']['MESAFLASH'] = 'True'
+		parent.checkMesaflashCB.setChecked(True)
+		config['NAGS']['NEWUSER'] = 'True'
+		parent.newUserCB.setChecked(True)
 		if not os.path.isdir(os.path.expanduser('~/.config/measct')):
 			os.makedirs(os.path.expanduser('~/.config/measct'))
 		with open(os.path.expanduser('~/.config/measct/mesact.conf'), 'w') as configfile:

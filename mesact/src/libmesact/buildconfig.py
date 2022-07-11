@@ -22,6 +22,12 @@ def build(parent):
 		config['NAGS']['MESAFLASH'] = 'True'
 	else:
 		config['NAGS']['MESAFLASH'] = 'False'
+	if parent.newUserCB.isChecked():
+		config['NAGS']['NEWUSER'] = 'True'
+	else:
+		config['NAGS']['NEWUSER'] = 'False'
+
+
 	config.add_section('STARTUP')
 	if parent.loadConfigCB.isChecked():
 		config['STARTUP']['CONFIG'] = parent.configName.text()
@@ -30,10 +36,12 @@ def build(parent):
 	with open(os.path.expanduser('~/.config/measct/mesact.conf'), 'w') as configfile:
 		config.write(configfile)
 
-
 		if config.has_option('NAGS', 'MESAFLASH'):
 			if config['NAGS']['MESAFLASH'] == 'True':
 				parent.checkMesaflashCB.setChecked(True)
+		if config.has_option('NAGS', 'MESAFLASH'):
+			if config['NAGS']['NEWUSER'] == 'True':
+				parent.newUserCB.setChecked(True)
 
 	# check for linuxcnc paths
 	if not os.path.exists(os.path.expanduser('~/linuxcnc')):

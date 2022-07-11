@@ -7,6 +7,7 @@ def checkit(parent):
 	validNumber = 'is not a valid number in the form 0.0 or 0'
 
 	# check the Machine Tab for errors
+	# check to see if a daughter card is selected for that type
 	if not parent.configName.text():
 		tabError = True
 		configErrors.append('\tA configuration name must be entered')
@@ -74,6 +75,7 @@ def checkit(parent):
 	# end of Display Tab
 
 	# check the Axis Tab for errors
+	# bitch and bail if the Axis Tab is not enabled
 	if len(parent.coordinatesLB.text()) == 0:
 		tabError = True
 		configErrors.append('\tAt least one Joint must be configured starting with Joint 0')
@@ -298,6 +300,7 @@ def checkit(parent):
 	# end of Axis Tab
 
 	# check the I/O Tab for errors
+	# bitch and bail if the I/O Tab is not enabled
 	for i in range(32):
 		# check for home all
 		if getattr(parent, f'inputPB_{i}').text() == 'Home All':
