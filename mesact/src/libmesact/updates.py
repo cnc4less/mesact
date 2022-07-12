@@ -5,8 +5,6 @@ from packaging import version
 
 from PyQt5.QtWidgets import QApplication, QFileDialog, QComboBox
 
-REPO = 'mesact'
-
 def checkUpdates(parent):
 	response = requests.get(f"https://api.github.com/repos/jethornton/{REPO}/releases/latest")
 	repoVersion = response.json()["name"]
@@ -15,30 +13,31 @@ def checkUpdates(parent):
 	elif version.parse(repoVersion) == version.parse(parent.version):
 		parent.machinePTE.appendPlainText(f'The Repo version {repoVersion} is the same as this version')
 
-def downloadDeb(parent):
+def downloadAmd64Deb(parent):
 	directory = str(QFileDialog.getExistingDirectory(parent, "Select Directory"))
 	if directory != '':
 		parent.statusbar.showMessage('Checking Repo')
-		response = requests.get(f"https://api.github.com/repos/jethornton/{REPO}/releases/latest")
+		response = requests.get("https://api.github.com/repos/jethornton/mesact/releases/latest")
 		repoVersion = response.json()["name"]
 		parent.statusbar.showMessage(f'Mesa Configuration Tool Version {repoVersion} Download Starting')
-		destination = os.path.join(directory, f'{REPO}_' + repoVersion + '_amd64.deb')
-		deburl = os.path.join(f'https://github.com/jethornton/{REPO}/raw/master/{REPO}_' + repoVersion + '_amd64.deb')
+		destination = os.path.join(directory, 'mesact_' + repoVersion + '_amd64.deb')
+		deburl = os.path.join('https://github.com/jethornton/mesact/raw/master/mesact_' + repoVersion + '_amd64.deb')
 		download(parent, deburl, destination)
 		parent.statusbar.showMessage(f'Mesa Configuration Tool Version {repoVersion} Download Complete')
 	else:
 		parent.statusbar.showMessage('Download Cancled')
 
-def downloadtZip(parent):
+def downloadArmhZip(parent):
 	directory = str(QFileDialog.getExistingDirectory(parent, "Select Directory"))
 	if directory != '':
 		parent.statusbar.showMessage('Checking Repo')
-		response = requests.get("https://api.github.com/repos/jethornton/{REPO}/releases/latest")
+		response = requests.get("https://api.github.com/repos/jethornton/mesact/releases/latest")
 		repoVersion = response.json()["name"]
 		parent.statusbar.showMessage(f'Mesa Configuration Tool Version {repoVersion} Download Starting')
-		destination = os.path.join(directory, f'{REPO}_' + repoVersion + '.zip')
-		zipurl = 'https://github.com/jethornton/{REPO}/archive/master.zip'
-		download(parent, zipurl, destination)
+		destination = os.path.join(directory, 'mesact_' + repoVersion + '_armhf.deb')
+		#zipurl = 'https://github.com/jethornton/{REPO}/archive/master.zip'
+		deburl = os.path.join('https://github.com/jethornton/mesact/raw/master/mesact_' + repoVersion + '_armhf.deb')
+		download(parent, deburl, destination)
 		parent.statusbar.showMessage(f'Mesa Configuration Tool Version {repoVersion} Download Complete')
 	else:
 		parent.statusbar.showMessage('Download Cancled')

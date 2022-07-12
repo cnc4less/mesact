@@ -28013,8 +28013,8 @@ auto enp2s0
      <string>File</string>
     </property>
     <addaction name="actionOpen"/>
-    <addaction name="actionDownloadDeb"/>
-    <addaction name="actionDownloadZip"/>
+    <addaction name="actionDlAmd64Deb"/>
+    <addaction name="actionDlArmhfDeb"/>
    </widget>
    <widget class="QMenu" name="menuConfig">
     <property name="title">
@@ -28124,14 +28124,17 @@ QToolButton {
     <string>Check for Updates</string>
    </property>
   </action>
-  <action name="actionDownloadDeb">
+  <action name="actionDlAmd64Deb">
    <property name="text">
-    <string>Download Deb</string>
+    <string>Download Amd64 Deb</string>
    </property>
   </action>
-  <action name="actionDownloadZip">
+  <action name="actionDlArmhfDeb">
    <property name="text">
-    <string>Download Zip</string>
+    <string>Download Armhf Deb</string>
+   </property>
+   <property name="toolTip">
+    <string>Download Raspberry Pi Armhf Deb</string>
    </property>
   </action>
   <action name="actionDocuments">
