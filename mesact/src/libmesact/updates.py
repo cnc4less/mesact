@@ -27,7 +27,7 @@ def downloadAmd64Deb(parent):
 	else:
 		parent.statusbar.showMessage('Download Cancled')
 
-def downloadArmhZip(parent):
+def downloadArmhDeb(parent):
 	directory = str(QFileDialog.getExistingDirectory(parent, "Select Directory"))
 	if directory != '':
 		parent.statusbar.showMessage('Checking Repo')
@@ -35,7 +35,6 @@ def downloadArmhZip(parent):
 		repoVersion = response.json()["name"]
 		parent.statusbar.showMessage(f'Mesa Configuration Tool Version {repoVersion} Download Starting')
 		destination = os.path.join(directory, 'mesact_' + repoVersion + '_armhf.deb')
-		#zipurl = 'https://github.com/jethornton/{REPO}/archive/master.zip'
 		deburl = os.path.join('https://github.com/jethornton/mesact/raw/master/mesact_' + repoVersion + '_armhf.deb')
 		download(parent, deburl, destination)
 		parent.statusbar.showMessage(f'Mesa Configuration Tool Version {repoVersion} Download Complete')
